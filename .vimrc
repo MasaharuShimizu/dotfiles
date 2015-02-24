@@ -33,16 +33,16 @@ set spelllang=en,cjk
 
 " ### Folding ### {{{
 " 折りたたみを示す列を表示
-set foldcolumn=1
+"set foldcolumn=1
 
 " 最初に折りたたみをなるべく開く
-set foldlevel=99
+"set foldlevel=99
 
 " デフォルトの折りたたみ方法
-set foldmethod=marker
+"set foldmethod=marker
 
 " 折りたたまれたテキストの表示方法
-set foldtext=MyFoldText()
+"set foldtext=MyFoldText()
 " }}}
 
 " ### Search ### {{{
@@ -108,7 +108,7 @@ let g:cursorcolumn_flg = 0
 " ステータス行を常に表示
 set laststatus=2
 
-" 自動改行しない
+"
 set textwidth=78
 
 " 行番号を表示
