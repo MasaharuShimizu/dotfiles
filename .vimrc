@@ -187,6 +187,7 @@ set wildmode=longest:full
 " コマンドの履歴の保存数
 set history=2000
 
+
 " }}}
 
 " ### Misc ### {{{
@@ -308,8 +309,7 @@ NeoBundleCheck
 " vim-airline
 " set ambiwidth=double
 let g:airline_powerline_fonts=1
-"set guifont=Ricty\ Discord\ Regular\ for\ Powerline:h15
-let g:airline_theme='tomorrow'
+let g:airline_theme='bubblegum'
 set laststatus=2
 set t_Co=256
 let g:airline#extensions#tabline#enabled = 0
