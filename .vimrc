@@ -174,6 +174,11 @@ map Y y$
 " <C-L>で検索後の強調表示を解除する
 nnoremap <C-L> :nohl<CR><C-L>
 
+" insert時移動
+"inoremap <C-L> <Right>
+"inoremap <C-K> <Up>
+"inoremap <C-J> <Down>
+
 " }}}
 
 " ### Command ### {{{

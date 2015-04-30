@@ -28,7 +28,7 @@ ssh-add ~/.ssh/id_rsa_zero2
 ssh-add ~/.ssh/id_rsa_gitlab
 
 # environmental varaiables
-set PATH $PATH ~/bin ~/bin/dotfiles/bin ~/.cabal/bin/
+set PATH $PATH ~/bin ~/bin/dotfiles/bin ~/.cabal/bin/ $HOME/.nodebrew/current/bin
 
 # others
 alias rm='rmtrash'
