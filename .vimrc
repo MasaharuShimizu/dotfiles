@@ -301,6 +301,7 @@ NeoBundle 'nsf/gocode'
 NeoBundle 'alpaca-tc/alpaca_powertabline'
 NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
 NeoBundle 'Lokaltog/powerline-fontpatcher'
+NeoBundle 'vim-scripts/vim-auto-save'
 
 call neobundle#end()
 
@@ -418,6 +419,11 @@ if !exists('g:neocomplcache_omni_patterns')
         colorscheme Lucius
         hi clear SpellBad
         hi SpellBad cterm=underline ctermfg=red
+
+" vim-auto-save
+let g:auto_save=1
+let g:auto_save_in_insert_mode=0
+let g:auto_save_silent=1
 
 "-------------------------
 " End Neobundle Settings.
