@@ -15,6 +15,9 @@ set fish_plugins theme extract
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
 
+# Delete messages when fish-shell starts
+set -u fish_greeting
+
 # terminal colors
 alias ls='gls -F --color=auto'
 alias la='gls -aF --color=auto'

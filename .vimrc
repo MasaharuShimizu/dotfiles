@@ -179,6 +179,13 @@ nnoremap <C-L> :nohl<CR><C-L>
 "inoremap <C-K> <Up>
 "inoremap <C-J> <Down>
 
+" insertモード終了時にIME状態を保存しない
+"inoremap <silent> <Esc> <Esc>
+"inoremap <silent> <C-[> <Esc>
+"
+" 日本語入力固定モード 切り替えキー
+"inoremap <silent> <C-j> <C-^>
+
 " }}}
 
 " ### Command ### {{{

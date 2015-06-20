@@ -26,7 +26,7 @@ SET fish_color_search_match:red\x1e\x2d\x2dbold
 SET fish_color_status:red
 SET fish_color_user:00ff00
 SET fish_color_valid_path:red\x1e\x2d\x2dbold
-SET fish_greeting:Welcome\x20to\x20fish\x2c\x20the\x20friendly\x20interactive\x20shell\x0aType\x20\x1b\x5b32mhelp\x1b\x5b30m\x1b\x28B\x1b\x5bm\x20for\x20instructions\x20on\x20how\x20to\x20use\x20fish
+SET fish_greeting:\x1d
 SET fish_key_bindings:fish\x5fdefault\x5fkey\x5fbindings
 SET fish_pager_color_completion:cyan\x1e\x2d\x2dbold
 SET fish_pager_color_description:normal
