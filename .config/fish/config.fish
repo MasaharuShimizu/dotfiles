@@ -38,6 +38,7 @@ ssh-add ~/.ssh/id_rsa_zero2
 ssh-add ~/.ssh/id_rsa_gitlab
 
 # environmental varaiables
+set -x JAVA_HOME $JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home
 set -x GOPATH $GOPATH /Users/shimizu/gocode
 set PATH $PATH $HOME/bin $HOME/bin/dotfiles/bin $HOME/.cabal/bin/ $HOME/.nodebrew/current/bin $GOROOT/bin $GOPATH/bin
 
