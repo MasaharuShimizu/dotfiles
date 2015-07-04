@@ -121,6 +121,13 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'csscomb/vim-csscomb'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'nsf/gocode'
+NeoBundleLazy 'jason0x43/vim-js-indent', {
+\ 'autoload' : {
+\   'filetypes' : ['typescript', 'javascript', 'html'] }
+\}
+if version >= 703
+  NeoBundle 'haya14busa/incsearch.vim'
+endif
 
 call neobundle#end()
 
