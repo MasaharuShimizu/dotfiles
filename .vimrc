@@ -82,6 +82,20 @@ set tabstop=4
 "スペルチェックから日本語を外す
 set spelllang=en,cjk
 
+"window系のキーマップ
+"それぞれ左、下、上、右、次の分割ウィンドウに移動
+nnoremap sh <C-w>h
+nnoremap sj <C-w>j
+nnoremap sk <C-w>k
+nnoremap sl <C-w>l
+nnoremap sw <C-w>w
+"タブページ
+"新規タブ
+nnoremap st :<C-u>tabnew<CR>
+"次のタブ、前のタブに切り替え
+nnoremap sn gt
+nnoremap sp gT
+
 " Neobundleの初期化
 if has('vim_starting')
     set runtimepath+=~/.vim/bundle/neobundle.vim/
