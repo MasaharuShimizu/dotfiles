@@ -197,7 +197,8 @@ nnoremap <C-p> :<C-u>CtrlPMixed<CR>
 let g:ctrlp_map = '<Nop>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+" set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=**/tmp/,*.so,*.swp,*.zip
 let g:ctrlp_extensions = ['tag', 'quickfix', 'dir', 'line', 'mixed']
 
 " Settings for vim-operator-surround
