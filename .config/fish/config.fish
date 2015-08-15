@@ -45,7 +45,7 @@ set PATH $PATH $HOME/bin $HOME/bin/dotfiles/bin $HOME/.cabal/bin/ $HOME/.nodebre
 # others
 alias rm='rmtrash'
 alias tunnel='ssh -N -f tunnel'
-alias ktunnel='ps -A|grep ssh|grep tunnel|sed -e \'s/\([0-9]*\).*/kill \1/g\'|sh'
+alias quitunnel='ps -A|grep ssh|grep tunnel|sed -e \'s/\([0-9]*\).*/kill \1/g\'|sh'
 
 # Redefine fish_prompt
 function fish_prompt
