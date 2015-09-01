@@ -51,3 +51,8 @@ alias quitunnel='ps -A|grep ssh|grep tunnel|sed -e \'s/\([0-9]*\).*/kill \1/g\'|
 function fish_prompt
 ~/powerline-shell.py $status --shell bare ^/dev/null
 end
+
+# Change fish key bindings like vim
+function fish_user_key_bindings
+  fish_vi_key_bindings
+end
