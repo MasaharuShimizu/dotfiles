@@ -98,6 +98,7 @@ NeoBundle 'yuroyoro/vimdoc_ja'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'tomasr/molokai'
+NeoBundle 'vim-scripts/Lucius'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'Lokaltog/vim-easymotion'
@@ -122,6 +123,8 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'csscomb/vim-csscomb'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'nsf/gocode'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundleLazy 'jason0x43/vim-js-indent', {
 \ 'autoload' : {
 \   'filetypes' : ['typescript', 'javascript', 'html'] }
@@ -236,7 +239,6 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 "カラースキームを設定
-let g:molokai_original = 1
 colorscheme lucius
 hi clear SpellBad
 hi SpellBad cterm=underline ctermfg=red
