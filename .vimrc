@@ -125,6 +125,7 @@ NeoBundle 'fatih/vim-go'
 NeoBundle 'nsf/gocode'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'ujihisa/unite-colorscheme'
+NeoBundle 'scrooloose/syntastic'
 NeoBundleLazy 'jason0x43/vim-js-indent', {
 \ 'autoload' : {
 \   'filetypes' : ['typescript', 'javascript', 'html'] }
@@ -237,6 +238,17 @@ vmap ib <Plug>(textobj-multiblock-i)
 map <C-n> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" Settings for syntastic checker
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_python_checkers = ['flake8']
 
 "カラースキームを設定
 colorscheme lucius
