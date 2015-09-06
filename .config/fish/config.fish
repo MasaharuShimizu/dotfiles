@@ -33,7 +33,7 @@ alias bup='brew update'
 alias bupg='brew upgrade --all'
 
 # ssh-agent
-ssh-add ~/.ssh/id_rsa_juno
+ssh-add ~/.ssh/id_rsa
 ssh-add ~/.ssh/id_rsa_zero2
 ssh-add ~/.ssh/id_rsa_gitlab
 
