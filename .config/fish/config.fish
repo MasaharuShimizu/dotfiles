@@ -52,6 +52,9 @@ function fish_prompt
 ~/powerline-shell.py $status --shell bare ^/dev/null
 end
 
+# To use docker commands
+eval (docker-machine env dev)
+
 # Change fish key bindings like vim
 # function fish_user_key_bindings
 #   fish_vi_key_bindings
