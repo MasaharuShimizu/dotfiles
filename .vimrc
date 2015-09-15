@@ -126,6 +126,7 @@ NeoBundle 'nsf/gocode'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'davidhalter/jedi-vim'
 NeoBundleLazy 'jason0x43/vim-js-indent', {
 \ 'autoload' : {
 \   'filetypes' : ['typescript', 'javascript', 'html'] }
@@ -154,7 +155,7 @@ let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
 let g:indent_guides_color_change_percent = 20
-let g:indent_guides_auto_colors = 0
+let g:indent_guides_auto_colors = 1
 autocmd VimEnter,Colorscheme * : highlight IndentGuidesOdd  ctermbg=black
 autocmd VimEnter,Colorscheme * : highlight IndentGuidesEven ctermbg=black
 
@@ -249,6 +250,13 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['flake8']
+
+" rename用のマッピングを無効にしたため、代わりにコマンドを定義
+command! -nargs=0 JediRename :call jedi#rename()
+
+" pythonのrename用のマッピングがquickrunとかぶるため回避させる
+let g:jedi#rename_command = ""
+let g:jedi#documentation_command = "k"
 
 "カラースキームを設定
 colorscheme lucius
