@@ -127,6 +127,8 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'davidhalter/jedi-vim'
+NeoBundle 'hynek/vim-python-pep8-indent'
+NeoBundle 'hachibeeDI/python_hl_lvar.vim'
 NeoBundleLazy 'jason0x43/vim-js-indent', {
 \ 'autoload' : {
 \   'filetypes' : ['typescript', 'javascript', 'html'] }
@@ -256,7 +258,7 @@ command! -nargs=0 JediRename :call jedi#rename()
 
 " pythonのrename用のマッピングがquickrunとかぶるため回避させる
 let g:jedi#rename_command = ""
-let g:jedi#documentation_command = "k"
+let g:jedi#documentation_command = "m"
 
 "カラースキームを設定
 colorscheme lucius
