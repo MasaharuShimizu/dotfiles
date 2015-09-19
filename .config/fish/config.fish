@@ -23,7 +23,7 @@ alias ls='gls -F --color=auto'
 alias la='gls -aF --color=auto'
 alias ll='gls -lF --color=auto'
 alias grep='grep --color=auto'
-set -x LS_COLORS (cat ~/dotfiles/.config/fish/dircolors.solarized-ansi-dark-fish)
+# set -x LS_COLORS (cat ~/dotfiles/.config/fish/dircolors.solarized-ansi-dark-fish)
 
 # brew
 alias bs='brew -S'
