@@ -103,7 +103,6 @@ NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'toyamarinyon/vim-swift'
-" NeoBundle 'Keithbsmiley/swift.vim'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'plasticboy/vim-markdown'
@@ -129,6 +128,7 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'hynek/vim-python-pep8-indent'
 NeoBundle 'hachibeeDI/python_hl_lvar.vim'
+NeoBundle 'grep.vim'
 NeoBundleLazy 'jason0x43/vim-js-indent', {
 \ 'autoload' : {
 \   'filetypes' : ['typescript', 'javascript', 'html'] }
