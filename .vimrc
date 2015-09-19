@@ -147,7 +147,7 @@ NeoBundleCheck
 
 " vim-airline
 let g:airline_powerline_fonts=1
-let g:airline_theme='powerlineish'
+let g:airline_theme='hybridline'
 set laststatus=2
 set t_Co=256
 let g:airline#extensions#tabline#enabled = 1
