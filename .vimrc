@@ -129,10 +129,14 @@ NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'hynek/vim-python-pep8-indent'
 NeoBundle 'hachibeeDI/python_hl_lvar.vim'
 NeoBundle 'grep.vim'
-NeoBundleLazy 'jason0x43/vim-js-indent', {
-\ 'autoload' : {
-\   'filetypes' : ['typescript', 'javascript', 'html'] }
-\}
+NeoBundle 'moll/vim-node'
+NeoBundle 'mattn/jscomplete-vim'
+NeoBundle 'myhere/vim-nodejs-complete'
+NeoBundle 'pangloss/vim-javascript'
+" NeoBundleLazy 'jason0x43/vim-js-indent', {
+" \ 'autoload' : {
+" \   'filetypes' : ['typescript', 'javascript', 'html'] }
+" \}
 if version >= 703
   NeoBundle 'haya14busa/incsearch.vim'
 endif
@@ -252,6 +256,17 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['flake8']
+
+" jscomplete-vim
+:setl omnifunc=jscomplete#CompleteJS
+
+" vim-nodejs-complete
+:setl omnifunc=jscomplete#CompleteJS
+if !exists('g:neocomplcache_omni_functions')
+  let g:neocomplcache_omni_functions = {}
+endif
+let g:neocomplcache_omni_functions.javascript = 'nodejscomplete#CompleteJS'
+let g:node_usejscomplete = 1
 
 " rename用のマッピングを無効にしたため、代わりにコマンドを定義
 command! -nargs=0 JediRename :call jedi#rename()
