@@ -37,15 +37,8 @@ ssh-add ~/.ssh/id_rsa
 ssh-add ~/.ssh/id_rsa_zero2
 ssh-add ~/.ssh/id_rsa_gitlab
 
-# environmental varaiables
-set -x JAVA_HOME $JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home
-set -x GOPATH $GOPATH /Users/shimizu/gocode
-set PATH $PATH $HOME/bin $HOME/bin/dotfiles/bin $HOME/.cabal/bin $HOME/.nodebrew/current/bin $GOROOT/bin $GOPATH/bin
-
-# others
-alias rm='rmtrash'
-alias tunnel='ssh -N -f tunnel'
-alias quitunnel='ps -A|grep ssh|grep tunnel|sed -e \'s/\([0-9]*\).*/kill \1/g\'|sh'
+# Common PATH
+set -x PATH $PATH $HOME/bin $HOME/bin/dotfiles/bin $HOME/.cabal/bin
 
 # Redefine fish_prompt
 function fish_prompt
@@ -54,6 +47,26 @@ end
 
 # To use docker commands
 eval (docker-machine env dev)
+
+# node.js
+set -x PATH $PATH $HOME/.nodebrew/current/bin
+
+# rbenv
+set -x PATH $HOME/.rbenv/bin $PATH
+set -x PATH $HOME/.rbenv/shims $PATH
+rbenv rehash >/dev/null ^&1
+
+# Java
+set -x JAVA_HOME $JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home
+
+# Go
+set -x GOPATH $GOPATH /Users/shimizu/gocode
+set -x PATH $PATH $GOROOT/bin $GOPATH/bin
+
+# others
+alias rm='rmtrash'
+alias tunnel='ssh -N -f tunnel'
+alias quitunnel='ps -A|grep ssh|grep tunnel|sed -e \'s/\([0-9]*\).*/kill \1/g\'|sh'
 
 # Change fish key bindings like vim
 # function fish_user_key_bindings

@@ -1,7 +1,7 @@
 [user]
 	email = ariaira08@gmail.com
 [core]
-	excludesfile = /Users/shimizu/.gitignore_global
+	excludesfile = /Users/shimizu/.gitignore
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
@@ -11,3 +11,20 @@
 [alias]
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	st = status
+	co = checkout
+	ci = commit -v
+	di = diff
+	br = branch
+	puhs = push
+	psuh = push
+	pus = push
+	puh = push
+	pl = !git pull && git submodule update --init
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	grep = auto
+[push]
+	default = current
