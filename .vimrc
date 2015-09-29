@@ -133,10 +133,14 @@ NeoBundle 'moll/vim-node'
 NeoBundle 'mattn/jscomplete-vim'
 NeoBundle 'myhere/vim-nodejs-complete'
 NeoBundle 'pangloss/vim-javascript'
-" NeoBundleLazy 'jason0x43/vim-js-indent', {
-" \ 'autoload' : {
-" \   'filetypes' : ['typescript', 'javascript', 'html'] }
-" \}
+NeoBundleLazy 'jason0x43/vim-js-indent', {
+\ 'autoload' : {
+\   'filetypes' : ['typescript', 'javascript', 'html'] }
+\}
+NeoBundleLazy 'leafgarland/typescript-vim', {
+\ 'autoload' : {
+\   'filetypes' : ['typescript'] }
+\}
 if version >= 703
   NeoBundle 'haya14busa/incsearch.vim'
 endif
