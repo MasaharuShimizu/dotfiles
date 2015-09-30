@@ -117,7 +117,7 @@ NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'rhysd/vim-operator-surround'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'osyo-manga/vim-textobj-multiblock'
-NeoBundle 'Townk/vim-autoclose'
+NeoBundle 'cohama/lexima.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'csscomb/vim-csscomb'
 NeoBundle 'fatih/vim-go'
@@ -132,7 +132,6 @@ NeoBundle 'grep.vim'
 NeoBundle 'moll/vim-node'
 NeoBundle 'mattn/jscomplete-vim'
 NeoBundle 'myhere/vim-nodejs-complete'
-NeoBundle 'pangloss/vim-javascript'
 NeoBundleLazy 'jason0x43/vim-js-indent', {
 \ 'autoload' : {
 \   'filetypes' : ['typescript', 'javascript', 'html'] }
