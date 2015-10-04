@@ -131,6 +131,7 @@ NeoBundle 'grep.vim'
 NeoBundle 'moll/vim-node'
 NeoBundle 'mattn/jscomplete-vim'
 NeoBundle 'myhere/vim-nodejs-complete'
+NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'mxw/vim-jsx'
 NeoBundleLazy 'jason0x43/vim-js-indent', {
 \ 'autoload' : {
