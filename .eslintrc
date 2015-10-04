@@ -1,4 +1,7 @@
 {
+  "plugins": [
+    "react"
+  ]
   "rules": {
     "indent": [
       2,
@@ -24,16 +27,17 @@
       "vars": "all",
       "args" : "after-used",
     }],
-    "no-console": 0
+    "no-console": 0,
+    "react/jsx-uses-vars": 1
   },
-    "env": {
-      "es6": true,
-      "node": true,
-      "browser": true
-    },
-    "ecmaFeatures": {
-      "modules": true,
-      "jsx": true
-    },
-    "extends": "eslint:recommended"
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "ecmaFeatures": {
+    "modules": true,
+    "jsx": true
+  },
+  "extends": "eslint:recommended"
 }
