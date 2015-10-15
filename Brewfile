@@ -14,10 +14,12 @@ brew xdotool
 ## phinze/cask
 tap phinze/cask
 brew brew-cask
+cask appcleaner
 cask caffeine
 cask clipmenu
 cask cyberduck
 cask evernote
+cask fluid
 cask google-chrome
 cask google-drive
 cask imageoptim
@@ -82,6 +84,7 @@ brew gmp
 brew go
 brew gobject-introspection
 brew harfbuzz
+brew heroku-toolbelt
 brew icu4c
 brew imagemagick
 brew iperf
@@ -108,6 +111,7 @@ brew mpfr
 brew mysql
 brew nkf
 brew nmap
+brew nodebrew
 brew oniguruma
 brew openjpeg
 brew openssl
