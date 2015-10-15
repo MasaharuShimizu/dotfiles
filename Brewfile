@@ -22,6 +22,7 @@ cask evernote
 cask fluid
 cask google-chrome
 cask google-drive
+cask google-japanese-ime
 cask imageoptim
 cask iterm2
 cask karabiner
