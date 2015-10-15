@@ -54,7 +54,12 @@ set -x PATH $PATH $HOME/.nodebrew/current/bin
 # rbenv
 set -x PATH $HOME/.rbenv/bin $PATH
 set -x PATH $HOME/.rbenv/shims $PATH
-rbenv rehash >/dev/null ^&1
+rbenv rehash > /dev/null ^&1
+
+# pyenv
+set PYENV_ROOT $HOME/.pyenv
+set -x PATH $PYENV_ROOT/shims $PYENV_ROOT/bin $PATH
+pyenv rehash > /dev/null
 
 # Java
 set -x JAVA_HOME $JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home
