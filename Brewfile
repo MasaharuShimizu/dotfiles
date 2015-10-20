@@ -116,6 +116,7 @@ brew nodebrew
 brew oniguruma
 brew openjpeg
 brew openssl
+brew pandoc
 brew pango
 brew pixman
 brew pkg-config
