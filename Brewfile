@@ -18,6 +18,7 @@ cask appcleaner
 cask caffeine
 cask clipmenu
 cask cyberduck
+cask dropbox
 cask evernote
 cask fluid
 cask google-chrome
@@ -26,6 +27,7 @@ cask google-japanese-ime
 cask imageoptim
 cask iterm2
 cask karabiner
+cask mactex
 cask mendeley-desktop
 cask seil
 cask skype
@@ -33,6 +35,7 @@ cask slack
 cask the-unarchiver
 cask vagrant
 cask virtualbox
+cask vlc
 cask wireshark
 cask xquartz
 
@@ -146,4 +149,6 @@ brew zeromq
 
 # App Store applications
 appstore Keynote
+appstore LINE
+appstore Numbers
 appstore Xcode
