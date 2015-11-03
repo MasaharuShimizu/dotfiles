@@ -32,6 +32,7 @@ cask mendeley-desktop
 cask seil
 cask skype
 cask slack
+cask spectacle
 cask the-unarchiver
 cask vagrant
 cask virtualbox
@@ -102,6 +103,7 @@ brew libffi
 brew libmpc
 brew libogg
 brew libpng
+brew libsodium
 brew libtiff
 brew libtool
 brew libvo-aacenc
