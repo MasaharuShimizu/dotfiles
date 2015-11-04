@@ -34,6 +34,7 @@ cask skype
 cask slack
 cask spectacle
 cask the-unarchiver
+cask trello-x
 cask vagrant
 cask virtualbox
 cask vlc
@@ -153,4 +154,5 @@ brew zeromq
 appstore Keynote
 appstore LINE
 appstore Numbers
+appstore ToyViewer
 appstore Xcode
