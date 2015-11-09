@@ -51,8 +51,8 @@ brew ricty --powerline --vim-powerline
 
 ## supermomonga/splhack
 tap supermomonga/splhack
-brew cmigemo-mk --HEAD
-brew ctags-objc-ja --HEAD
+brew cmigemo-mk
+brew ctags-objc-ja
 brew gettext-mk
 
 ## yudai/gotty
