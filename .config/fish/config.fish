@@ -39,7 +39,7 @@ ssh-add ~/.ssh/id_rsa_zero2
 ssh-add ~/.ssh/id_rsa_gitlab
 
 # Common PATH
-set -x PATH $PATH $HOME/bin $HOME/bin/dotfiles/bin $HOME/.cabal/bin
+set -x PATH $PATH $HOME/bin
 
 # Redefine fish_prompt
 function fish_prompt
