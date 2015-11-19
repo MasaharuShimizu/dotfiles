@@ -65,6 +65,7 @@ brew autoconf
 brew automake
 brew bash
 brew bison
+brew boost
 brew boot2docker
 brew cabal-install
 brew cairo
