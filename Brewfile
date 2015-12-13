@@ -60,6 +60,7 @@ tap yudai/gotty
 brew gotty
 
 # Other Homebrew packages
+brew arping
 brew aspell
 brew autoconf
 brew automake
@@ -103,6 +104,7 @@ brew lame
 brew libevent
 brew libffi
 brew libmpc
+brew libnet
 brew libogg
 brew libpng
 brew libsodium
