@@ -31,7 +31,7 @@ alias bi='brew info'
 alias bl='brew list'
 alias bup='brew update'
 alias bupg='brew upgrade --all'
-alias brewall='brew update; brew upgrade --all; brew file init -y; cp /usr/local/Library/Brewfile $HOME/dotfiles/'
+alias brewall='brew update; brew upgrade --all; brew file init -n; cp /usr/local/Library/Brewfile $HOME/dotfiles/'
 
 # ssh-agent
 ssh-add ~/.ssh/id_rsa
