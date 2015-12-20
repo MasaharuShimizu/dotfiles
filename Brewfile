@@ -81,6 +81,7 @@ brew ffmpeg
 brew fish
 brew fontconfig
 brew fontforge
+brew fping
 brew freetype
 brew gcc
 brew gdbm
