@@ -43,7 +43,7 @@ set -x PATH $PATH $HOME/bin
 
 # Redefine fish_prompt
 function fish_prompt
-~/powerline-shell.py $status --shell bare ^/dev/null
+  ~/powerline-shell.py $status --shell bare ^/dev/null
 end
 
 # To use docker commands
@@ -57,10 +57,10 @@ set -x PATH $HOME/.rbenv/bin $PATH
 set -x PATH $HOME/.rbenv/shims $PATH
 rbenv rehash > /dev/null ^&1
 
-# pyenv
-set PYENV_ROOT $HOME/.pyenv
-set -x PATH $PYENV_ROOT/shims $PYENV_ROOT/bin $PATH
-pyenv rehash > /dev/null
+# python
+source $HOME/.pythonz/etc/pythonz.fish
+eval (direnv hook fish)
+eval (python -m virtualfish auto_activation)
 
 # Java
 set -x JAVA_HOME $JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home
@@ -73,8 +73,3 @@ set -x PATH $PATH $GOROOT/bin $GOPATH/bin
 alias rm='rmtrash'
 alias tunnel='ssh -N -f tunnel'
 alias quitunnel='ps -A|grep ssh|grep tunnel|sed -e \'s/\([0-9]*\).*/kill \1/g\'|sh'
-
-# Change fish key bindings like vim
-# function fish_user_key_bindings
-#   fish_vi_key_bindings
-# end
