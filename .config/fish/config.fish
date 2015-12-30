@@ -47,7 +47,7 @@ function fish_prompt
 end
 
 # To use docker commands
-eval (docker-machine env dev)
+# eval (docker-machine env dev)
 
 # node.js
 set -x PATH $PATH $HOME/.nodebrew/current/bin
