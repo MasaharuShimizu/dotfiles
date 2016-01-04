@@ -4,6 +4,9 @@
 ## homebrew/binary
 tap homebrew/binary
 
+## homebrew/dupes
+tap homebrew/dupes
+
 ## homebrew/versions
 tap homebrew/versions
 
@@ -54,6 +57,9 @@ tap supermomonga/splhack
 brew cmigemo-mk
 brew ctags-objc-ja
 brew gettext-mk
+
+## tldr-pages/tldr
+tap tldr-pages/tldr
 
 ## yudai/gotty
 tap yudai/gotty
@@ -131,8 +137,6 @@ brew pango
 brew pixman
 brew pkg-config
 brew poppler
-brew pyenv
-brew pyenv-virtualenv
 brew python
 brew rbenv
 brew readline
@@ -143,6 +147,7 @@ brew sdl
 brew shellcheck
 brew sqlite
 brew texi2html
+brew tldr
 brew tmux
 brew tree
 brew vim
