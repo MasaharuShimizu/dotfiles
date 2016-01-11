@@ -1,20 +1,15 @@
 
 # tap repositories and their packages
 
-## homebrew/binary
 tap homebrew/binary
 
-## homebrew/dupes
 tap homebrew/dupes
 
-## homebrew/versions
 tap homebrew/versions
 
-## homebrew/x11
 tap homebrew/x11
 brew xdotool
 
-## phinze/cask
 tap phinze/cask
 brew brew-cask
 cask appcleaner
@@ -44,24 +39,19 @@ cask vlc
 cask wireshark
 cask xquartz
 
-## rcmdnk/file
 tap rcmdnk/file
 brew brew-file
 
-## sanemat/font
 tap sanemat/font
 brew ricty --powerline --vim-powerline
 
-## supermomonga/splhack
 tap supermomonga/splhack
 brew cmigemo-mk
 brew ctags-objc-ja
 brew gettext-mk
 
-## tldr-pages/tldr
 tap tldr-pages/tldr
 
-## yudai/gotty
 tap yudai/gotty
 brew gotty
 
