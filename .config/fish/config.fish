@@ -38,6 +38,9 @@ ssh-add ~/.ssh/id_rsa
 ssh-add ~/.ssh/id_rsa_zero2
 ssh-add ~/.ssh/id_rsa_gitlab
 
+# editor
+set -x EDITOR vim
+
 # Common PATH
 set -x PATH $PATH $HOME/bin
 
