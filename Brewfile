@@ -70,6 +70,7 @@ brew cmake
 brew coreutils
 brew curl
 brew czmq
+brew direnv
 brew docker
 brew docker-machine
 brew exiftool
