@@ -111,6 +111,7 @@ brew libtool
 brew libvo-aacenc
 brew libvorbis
 brew libvpx
+brew libzip
 brew little-cms2
 brew lua
 brew markdown
