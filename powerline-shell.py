@@ -121,6 +121,8 @@ if __name__ == "__main__":
             help='Deprecated. Use --cwd-mode=dironly')
     arg_parser.add_argument('--cwd-max-depth', action='store', type=int,
             default=5, help='Maximum number of directories to show in path')
+    arg_parser.add_argument('--cwd-max-dir-size', action='store', type=int,
+            help='Maximum number of letters displayed for each directory in the path')
     arg_parser.add_argument('--colorize-hostname', action='store_true',
             help='Colorize the hostname based on a hash of itself.')
     arg_parser.add_argument('--mode', action='store', default='patched',
@@ -188,48 +190,57 @@ class Color(DefaultColor):
     pass
 
 
-# Basic theme which only uses colors in 0-15 range
+class DefaultColor:
+    """
+    This class should have the default colors for every segment.
+    Please test every new segment with this theme first.
+    """
+    USERNAME_FG = 250
+    USERNAME_BG = 240
+    USERNAME_ROOT_BG = 124
 
-class Color(DefaultColor):
-    USERNAME_FG = 15
-    USERNAME_BG = 12
-    USERNAME_ROOT_BG = 1
-
-    HOSTNAME_FG = 15
-    HOSTNAME_BG = 4
+    HOSTNAME_FG = 250
+    HOSTNAME_BG = 238
 
     HOME_SPECIAL_DISPLAY = True
-    HOME_BG = 8
-    HOME_FG = 7
-    ROOT_SPECIAL_DISPLAY = True
-    ROOT_BG = 8
-    ROOT_FG = 7
-    PATH_BG = 4
-    PATH_FG = 12
-    CWD_FG = 15
-    SEPARATOR_FG = 12
+    HOME_BG = 31
+    HOME_FG = 15
+    PATH_BG = 237
+    PATH_FG = 250
+    CWD_FG = 254
+    SEPARATOR_FG = 244
 
-    READONLY_BG = 1
-    READONLY_FG = 15
+    READONLY_BG = 124
+    READONLY_FG = 254
 
-    REPO_CLEAN_BG = 2
+    SSH_BG = 166
+    SSH_FG = 254
+
+    REPO_CLEAN_BG = 31
     REPO_CLEAN_FG = 15
-    REPO_DIRTY_BG = 1
+    REPO_DIRTY_BG = 161
     REPO_DIRTY_FG = 15
 
-    JOBS_FG = 14
-    JOBS_BG = 8
+    JOBS_FG = 39
+    JOBS_BG = 238
 
-    CMD_PASSED_BG = 8
+    CMD_PASSED_BG = 236
     CMD_PASSED_FG = 15
-    CMD_FAILED_BG = 1
+    CMD_FAILED_BG = 161
     CMD_FAILED_FG = 15
 
-    SVN_CHANGES_BG = REPO_DIRTY_BG
-    SVN_CHANGES_FG = REPO_DIRTY_FG
+    SVN_CHANGES_BG = 148
+    SVN_CHANGES_FG = 22
 
-    VIRTUAL_ENV_BG = 2
-    VIRTUAL_ENV_FG = 0
+    VIRTUAL_ENV_BG = 31
+    VIRTUAL_ENV_FG = 15
+
+class Color(DefaultColor):
+    """
+    This subclass is required when the user chooses to use 'default' theme.
+    Because the segments require a 'Color' class for every theme.
+    """
+    pass
 
 
 import os
@@ -325,6 +336,29 @@ def split_path_into_names(cwd):
     return names
 
 
+def requires_special_home_display(name):
+    """Returns true if the given directory name matches the home indicator and
+    the chosen theme should use a special home indicator display."""
+    return (name == '~' and Color.HOME_SPECIAL_DISPLAY)
+
+
+def maybe_shorten_name(name):
+    """If the user has asked for each directory name to be shortened, will
+    return the name up to their specified length. Otherwise returns the full
+    name."""
+    if powerline.args.cwd_max_dir_size:
+        return name[:powerline.args.cwd_max_dir_size]
+    return name
+
+
+def get_fg_bg(name):
+    """Returns the foreground and background color to use for the given name.
+    """
+    if requires_special_home_display(name):
+        return (Color.HOME_FG, Color.HOME_BG,)
+    return (Color.PATH_FG, Color.PATH_BG,)
+
+
 def add_cwd_segment():
     cwd = (powerline.cwd or os.getenv('PWD')).decode('utf-8')
     cwd = replace_home_dir(cwd)
@@ -337,18 +371,23 @@ def add_cwd_segment():
     if powerline.args.cwd_mode == 'plain':
         powerline.append(' %s ' % (cwd,), Color.CWD_FG, Color.PATH_BG)
     else:
-        if not (powerline.args.cwd_mode == 'dironly' or powerline.args.cwd_only):
-            for n in names[:-1]:
-                if n == '~' and Color.HOME_SPECIAL_DISPLAY:
-                    powerline.append(' %s ' % n, Color.HOME_FG, Color.HOME_BG)
-                else:
-                    powerline.append(' %s ' % n, Color.PATH_FG, Color.PATH_BG,
-                        powerline.separator_thin, Color.SEPARATOR_FG)
+        if (powerline.args.cwd_mode == 'dironly' or powerline.args.cwd_only):
+            # The user has indicated they only want the current directory to be
+            # displayed, so chop everything else off
+            names = names[-1:]
 
-        if names[-1] == '~' and Color.HOME_SPECIAL_DISPLAY:
-            powerline.append(' %s ' % names[-1], Color.HOME_FG, Color.HOME_BG)
-        else:
-            powerline.append(' %s ' % names[-1], Color.CWD_FG, Color.PATH_BG)
+        for i, name in enumerate(names):
+            fg, bg = get_fg_bg(name)
+
+            separator = powerline.separator_thin
+            separator_fg = Color.SEPARATOR_FG
+            is_last_dir = (i == len(names) - 1)
+            if requires_special_home_display(name) or is_last_dir:
+                separator = None
+                separator_fg = None
+
+            powerline.append(' %s ' % maybe_shorten_name(name), fg, bg,
+                             separator, separator_fg)
 
 add_cwd_segment()
 
