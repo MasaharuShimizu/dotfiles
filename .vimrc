@@ -125,6 +125,7 @@ NeoBundle 'moll/vim-node'
 NeoBundle 'mattn/jscomplete-vim'
 NeoBundle 'myhere/vim-nodejs-complete'
 NeoBundle 'Raimondi/delimitMate'
+NeoBundle 'vim-scripts/gtags.vim'
 NeoBundleLazy 'jason0x43/vim-js-indent', {
 \ 'autoload' : {
 \   'filetypes' : ['typescript', 'javascript', 'html'] }
@@ -272,6 +273,13 @@ command! -nargs=0 JediRename :call jedi#rename()
 " pythonのrename用のマッピングがquickrunとかぶるため回避させる
 let g:jedi#rename_command = ""
 let g:jedi#documentation_command = "m"
+
+" Gtags
+map <C-g> :Gtags
+map <C-i> :Gtags -f %<CR>
+map <C-h> :GtagsCursor<CR>
+map <C-j> :cn<CR>
+map <C-k> :cp<CR>
 
 "カラースキームを設定
 colorscheme hybrid
