@@ -68,6 +68,7 @@ brew cabal-install
 brew cairo
 brew cmake
 brew coreutils
+brew ctags
 brew curl
 brew czmq
 brew direnv
@@ -86,6 +87,7 @@ brew gettext
 brew ghc
 brew ghostscript
 brew glib
+brew global --with-pygments --with-ctags
 brew gmp
 brew go
 brew gobject-introspection
