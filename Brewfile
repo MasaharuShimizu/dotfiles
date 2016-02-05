@@ -81,6 +81,7 @@ brew fontconfig
 brew fontforge
 brew fping
 brew freetype
+brew gauche
 brew gcc
 brew gdbm
 brew gettext
@@ -135,6 +136,7 @@ brew python
 brew rbenv
 brew readline
 brew redis
+brew rlwrap
 brew rmtrash
 brew ruby-build
 brew sdl
