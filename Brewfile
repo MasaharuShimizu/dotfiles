@@ -6,6 +6,12 @@ tap homebrew/binary
 tap homebrew/dupes
 
 tap homebrew/versions
+brew cloog018
+brew gcc49
+brew gmp4
+brew isl011
+brew libmpc08
+brew mpfr2
 
 tap homebrew/x11
 brew xdotool
@@ -19,11 +25,13 @@ cask cyberduck
 cask dropbox
 cask evernote
 cask fluid
+cask github-desktop
 cask google-chrome
 cask google-drive
 cask google-japanese-ime
 cask imageoptim
 cask iterm2
+cask java
 cask karabiner
 cask mactex
 cask mendeley-desktop
@@ -54,6 +62,9 @@ tap tldr-pages/tldr
 
 tap yudai/gotty
 brew gotty
+
+## Direct install
+brew sshpass
 
 # Other Homebrew packages
 brew arping
@@ -117,6 +128,7 @@ brew libvpx
 brew libzip
 brew little-cms2
 brew lua
+brew makedepend
 brew markdown
 brew mercurial
 brew mpfr
@@ -125,6 +137,7 @@ brew nkf
 brew nmap
 brew nodebrew
 brew oniguruma
+brew open-mpi
 brew openjpeg
 brew openssl
 brew pandoc
