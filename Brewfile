@@ -140,6 +140,7 @@ brew oniguruma
 brew open-mpi
 brew openjpeg
 brew openssl
+brew p7zip
 brew pandoc
 brew pango
 brew pixman
@@ -155,6 +156,7 @@ brew ruby-build
 brew sdl
 brew shellcheck
 brew sqlite
+brew terminal-notifier
 brew texi2html
 brew tldr
 brew tmux
