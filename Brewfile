@@ -18,6 +18,7 @@ brew xdotool
 
 tap phinze/cask
 brew brew-cask
+cask adobe-reader
 cask appcleaner
 cask caffeine
 cask clipmenu
@@ -65,6 +66,9 @@ brew gotty
 
 ## Direct install
 brew sshpass
+
+tap argon/mas
+brew mas
 
 # Other Homebrew packages
 brew arping
@@ -171,8 +175,8 @@ brew yasm
 brew zeromq
 
 # App Store applications
-appstore Keynote
-appstore LINE
-appstore Numbers
-appstore ToyViewer
-appstore Xcode
+appstore 409183694 Keynote
+appstore 539883307 LINE
+appstore 409203825 Numbers
+appstore 414298354 ToyViewer
+appstore 497799835 Xcode
