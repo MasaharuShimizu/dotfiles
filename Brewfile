@@ -1,6 +1,9 @@
 
 # tap repositories and their packages
 
+tap argon/mas
+brew mas
+
 tap homebrew/binary
 
 tap homebrew/dupes
@@ -66,9 +69,6 @@ brew gotty
 
 ## Direct install
 brew sshpass
-
-tap argon/mas
-brew mas
 
 # Other Homebrew packages
 brew arping
@@ -173,10 +173,3 @@ brew xvid
 brew xz
 brew yasm
 brew zeromq
-
-# App Store applications
-appstore 409183694 Keynote
-appstore 539883307 LINE
-appstore 409203825 Numbers
-appstore 414298354 ToyViewer
-appstore 497799835 Xcode
