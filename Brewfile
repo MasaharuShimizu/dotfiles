@@ -39,6 +39,7 @@ cask java
 cask karabiner
 cask mactex
 cask mendeley-desktop
+cask netspot
 cask seil
 cask skype
 cask slack
