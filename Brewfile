@@ -23,6 +23,7 @@ tap phinze/cask
 brew brew-cask
 cask adobe-reader
 cask appcleaner
+cask aquaterm
 cask caffeine
 cask clipmenu
 cask cyberduck
@@ -99,6 +100,7 @@ brew fping
 brew freetype
 brew gauche
 brew gcc
+brew gd
 brew gdbm
 brew gettext
 brew ghc
@@ -106,6 +108,7 @@ brew ghostscript
 brew glib
 brew global --with-pygments --with-ctags
 brew gmp
+brew gnuplot --with-aquaterm --with-x11
 brew go
 brew gobject-introspection
 brew harfbuzz
