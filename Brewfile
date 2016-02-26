@@ -108,7 +108,7 @@ brew ghostscript
 brew glib
 brew global --with-pygments --with-ctags
 brew gmp
-brew gnuplot --with-aquaterm --with-x11
+brew gnuplot --with-aquaterm --with-x11 --with-aquaterm --with-x11
 brew go
 brew gobject-introspection
 brew harfbuzz
