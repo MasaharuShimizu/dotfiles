@@ -106,7 +106,7 @@ brew gettext
 brew ghc
 brew ghostscript
 brew glib
-brew global --with-pygments --with-ctags
+brew global --with-pygments --with-ctags --with-pygments --with-ctags
 brew gmp
 brew gnuplot --with-aquaterm --with-x11 --with-aquaterm --with-x11
 brew go
