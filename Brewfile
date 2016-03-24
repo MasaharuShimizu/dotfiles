@@ -181,6 +181,7 @@ brew zeromq
 # App Store applications
 appstore 409183694 Keynote
 appstore 539883307 LINE
+appstore 715768417 MicrosoftRemoteDesktop
 appstore 409203825 Numbers
 appstore 414298354 ToyViewer
 appstore 497799835 Xcode
