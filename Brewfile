@@ -88,6 +88,7 @@ brew coreutils
 brew ctags
 brew curl
 brew czmq
+brew dfc
 brew direnv
 brew docker
 brew docker-machine
@@ -113,6 +114,7 @@ brew go
 brew gobject-introspection
 brew harfbuzz
 brew heroku-toolbelt
+brew htop
 brew icu4c
 brew imagemagick
 brew iperf
