@@ -28,6 +28,7 @@ cask caffeine
 cask clipmenu
 cask cyberduck
 cask dropbox
+cask eclipse-ide
 cask evernote
 cask fluid
 cask github-desktop
