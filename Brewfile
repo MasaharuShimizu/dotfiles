@@ -132,6 +132,7 @@ cask dropbox
 cask eclipse-ide
 cask evernote
 cask fluid
+cask flux
 cask github-desktop
 cask google-chrome
 cask google-drive
@@ -142,6 +143,7 @@ cask java
 cask karabiner
 cask mactex
 cask mendeley-desktop
+cask near-lock
 cask netspot
 cask seil
 cask skype
