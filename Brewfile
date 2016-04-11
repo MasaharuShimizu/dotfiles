@@ -131,6 +131,7 @@ cask cyberduck
 cask dropbox
 cask eclipse-ide
 cask evernote
+cask firefox
 cask fluid
 cask flux
 cask github-desktop
