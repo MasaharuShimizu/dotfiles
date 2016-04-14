@@ -151,7 +151,6 @@ cask skype
 cask slack
 cask spectacle
 cask the-unarchiver
-cask trello-x
 cask vagrant
 cask virtualbox
 cask vlc
@@ -185,6 +184,11 @@ brew mpfr
 brew poppler
 brew terminal-notifier
 brew tldr
+
+# Below applications were installed by Cask,
+# but do not have corresponding casks.
+
+#cask trello-x (!)
 
 # App Store applications
 appstore 409183694 Keynote
