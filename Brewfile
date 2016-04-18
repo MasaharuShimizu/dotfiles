@@ -4,6 +4,9 @@
 tap argon/mas
 brew mas
 
+tap caskroom/versions
+cask java7
+
 tap homebrew/binary
 
 tap homebrew/core
