@@ -86,6 +86,7 @@ brew openssl
 brew p7zip
 brew pandoc
 brew pango
+brew pcre
 brew pixman
 brew pkg-config
 brew python
@@ -111,6 +112,8 @@ brew yasm
 brew zeromq
 
 tap homebrew/dupes
+
+tap homebrew/science
 
 tap homebrew/versions
 brew cloog018
@@ -185,6 +188,7 @@ brew docker
 brew glib
 brew mpfr
 brew poppler
+brew r
 brew terminal-notifier
 brew tldr
 
