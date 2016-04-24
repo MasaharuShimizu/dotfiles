@@ -127,7 +127,6 @@ tap homebrew/x11
 brew xdotool
 
 tap phinze/cask
-brew brew-cask
 cask adobe-reader
 cask appcleaner
 cask aquaterm
