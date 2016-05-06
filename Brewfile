@@ -41,9 +41,9 @@ brew gdbm
 brew gettext
 brew ghc
 brew ghostscript
-brew global --with-pygments --with-ctags --with-pygments --with-ctags --with-pygments --with-ctags
+brew global
 brew gmp
-brew gnuplot --with-aquaterm --with-x11 --with-aquaterm --with-x11
+brew gnuplot
 brew go
 brew gobject-introspection
 brew harfbuzz
@@ -166,7 +166,7 @@ tap rcmdnk/file
 brew brew-file
 
 tap sanemat/font
-brew ricty --powerline --vim-powerline
+brew ricty
 
 tap supermomonga/splhack
 brew cmigemo-mk
