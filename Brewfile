@@ -41,13 +41,13 @@ brew gdbm
 brew gettext
 brew ghc
 brew ghostscript
-brew global
+brew global --with-pygments --with-ctags
 brew gmp
-brew gnuplot
+brew gnuplot --with-aquaterm --with-x11
 brew go
 brew gobject-introspection
 brew harfbuzz
-brew heroku-toolbelt
+brew heroku
 brew htop
 brew icu4c
 brew imagemagick
@@ -166,10 +166,10 @@ tap rcmdnk/file
 brew brew-file
 
 tap sanemat/font
-brew ricty
+brew ricty --powerline --vim-powerline
 
 tap supermomonga/splhack
-brew cmigemo-mk
+brew cmigemo-mk --HEAD
 brew ctags-objc-ja
 brew gettext-mk
 
@@ -185,6 +185,7 @@ brew sshpass
 brew boot2docker
 brew docker
 brew glib
+brew heroku-toolbelt
 brew mpfr
 brew poppler
 brew r
