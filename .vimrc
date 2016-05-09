@@ -17,9 +17,12 @@ set list
 set listchars=tab:>\ ,extends:<
 "行番号を表示する
 set number
+"長い行を省略しない
+set display=lastline
 "閉じ括弧が入力されたとき、対応する括弧を表示する
 set showmatch
 "検索時に大文字を含んでいたら大/小を区別
+set ignorecase
 set smartcase
 "カーソルを行頭、行末で止まらないようにする
 set whichwrap=b,s,h,l,<,>,[,]
@@ -55,6 +58,8 @@ set wildmenu
 autocmd QuickFixCmdPost *grep* cwindow
 "vim-markdownでのコードフォルディングを無効にする
 let g:vim_markdown_folding_disabled=1
+"vim-markdownでLaTeX数式文法を有効に
+let g:vim_markdown_math = 1
 "なんかバックスペースが効かなくなるときの対策
 set backspace=indent,eol,start
 "行末の空白を保存時に自動的に削除するようにした
@@ -67,6 +72,8 @@ else
 endif
 "1行の長さ
 set textwidth=78
+"削除でヤンクしない
+nnoremap x "_x
 
 "タブ関係の設定
 "タブの代わりに空白文字を挿入する
@@ -80,7 +87,9 @@ set smarttab
 "ファイル内の <Tab> が対応する空白の数
 set tabstop=4
 "スペルチェックから日本語を外す
-set spelllang=en,cjk
+set spelllang+=cjk
+" 日本語も自動で折り返されるようにする
+set fo+=m
 
 " Neobundleの初期化
 if has('vim_starting')
