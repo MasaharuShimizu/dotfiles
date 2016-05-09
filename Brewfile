@@ -17,6 +17,7 @@ brew automake
 brew bash
 brew bison
 brew boost
+brew boot2docker
 brew cabal-install
 brew cairo
 brew cmake
@@ -27,6 +28,7 @@ brew czmq
 brew dfc
 brew direnv
 brew docker-machine
+brew docker
 brew exiftool
 brew ffmpeg
 brew fish
@@ -41,6 +43,7 @@ brew gdbm
 brew gettext
 brew ghc
 brew ghostscript
+brew glib
 brew global --with-pygments --with-ctags
 brew gmp
 brew gnuplot --with-aquaterm --with-x11
@@ -75,6 +78,7 @@ brew lua
 brew makedepend
 brew markdown
 brew mercurial
+brew mpfr
 brew mysql
 brew nkf
 brew nmap
@@ -89,6 +93,7 @@ brew pango
 brew pcre
 brew pixman
 brew pkg-config
+brew poppler
 brew python
 brew rbenv
 brew readline
@@ -99,6 +104,7 @@ brew ruby-build
 brew sdl
 brew shellcheck
 brew sqlite
+brew terminal-notifier
 brew texi2html
 brew tmux
 brew tree
@@ -114,6 +120,7 @@ brew zeromq
 tap homebrew/dupes
 
 tap homebrew/science
+brew r
 
 tap homebrew/versions
 brew cloog018
@@ -174,23 +181,13 @@ brew ctags-objc-ja
 brew gettext-mk
 
 tap tldr-pages/tldr
+brew tldr
 
 tap yudai/gotty
 brew gotty
 
 ## Direct install
 brew sshpass
-
-# Other Homebrew packages
-brew boot2docker
-brew docker
-brew glib
-brew heroku-toolbelt
-brew mpfr
-brew poppler
-brew r
-brew terminal-notifier
-brew tldr
 
 # Below applications were installed by Cask,
 # but do not have corresponding casks.
