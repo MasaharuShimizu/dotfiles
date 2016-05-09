@@ -91,79 +91,59 @@ set spelllang+=cjk
 " 日本語も自動で折り返されるようにする
 set fo+=m
 
-" Neobundleの初期化
-if has('vim_starting')
-    set runtimepath+=~/.vim/bundle/neobundle.vim/
+"ビープ音が鳴らないようにする
+set visualbell t_vb=
+set noerrorbells
+
+" dein.vim
+let g:rc_dir = '~/.vim/rc'
+let s:dein_dir = expand('~/.cache/dein')
+let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
+
+if &runtimepath !~# '/dein.vim'
+  if !isdirectory(s:dein_repo_dir)
+    execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
+  endif
+  execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
 
-call neobundle#begin(expand('~/.vim/bundle/'))
+" 設定開始
+if dein#load_state(s:dein_dir)
+  " プラグインリストを収めたTOMLファイル
+  let s:toml      = g:rc_dir . '/dein.toml'
+  let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
 
-" Bundles
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'thinca/vim-quickrun'
-NeoBundle 'yuroyoro/vimdoc_ja'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'bling/vim-airline'
-NeoBundle 'vim-airline/vim-airline-themes'
-NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'toyamarinyon/vim-swift'
-NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'mattn/emmet-vim'
-NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'kannokanno/previm'
-NeoBundle 'tyru/open-browser.vim'
-NeoBundle 'flazz/vim-colorschemes'
-NeoBundle 'koron/codic-vim'
-NeoBundle 'haya14busa/incsearch.vim'
-NeoBundle 'h1mesuke/vim-alignta'
-NeoBundle 'kana/vim-operator-user'
-NeoBundle 'kana/vim-textobj-user'
-NeoBundle 'rhysd/vim-operator-surround'
-NeoBundle 'osyo-manga/vim-textobj-multiblock'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'csscomb/vim-csscomb'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'ujihisa/unite-colorscheme'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'davidhalter/jedi-vim'
-NeoBundle 'hynek/vim-python-pep8-indent'
-NeoBundle 'moll/vim-node'
-NeoBundle 'mattn/jscomplete-vim'
-NeoBundle 'myhere/vim-nodejs-complete'
-NeoBundle 'Raimondi/delimitMate'
-NeoBundle 'vim-scripts/gtags.vim'
-NeoBundle 'aharisu/vim_goshrepl'
-NeoBundle 'aharisu/vim-gdev'
-NeoBundle 'Shougo/vimproc.vim'
-NeoBundleLazy 'jason0x43/vim-js-indent', {
-\ 'autoload' : {
-\   'filetypes' : ['typescript', 'javascript', 'html'] }
-\}
-NeoBundleLazy 'leafgarland/typescript-vim', {
-\ 'autoload' : {
-\   'filetypes' : ['typescript'] }
-\}
-if version >= 703
-  NeoBundle 'haya14busa/incsearch.vim'
+  call dein#begin(s:dein_dir, [s:toml, s:lazy_toml])
+
+  " TOMLを読み込み、キャッシュしておく
+  call dein#load_toml(s:toml,      {'lazy': 0})
+  call dein#load_toml(s:lazy_toml, {'lazy': 1})
+
+  " 設定終了
+  call dein#end()
+  call dein#save_state()
 endif
 
-call neobundle#end()
+
+" vimprocだけは最初にインストールしてほしい
+if dein#check_install(['vimproc'])
+  call dein#add('Shougo/vimproc.vim', {'build' : 'make'})
+endif
+
+" もし、未インストールものものがあったらインストール
+if dein#check_install()
+  call dein#install()
+endif
 
 filetype plugin indent on
 
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
+" previm
+let g:previm_enable_realtime = 1
 
 " vim-airline
 let g:airline_powerline_fonts=1
 let g:airline_theme='hybridline'
 set laststatus=2
-set t_Co=256
 let g:airline#extensions#tabline#enabled = 1
 
 " vim-indent-guides
@@ -184,7 +164,6 @@ let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 if !exists('g:neocomplcache_keyword_patterns')
   let g:neocomplcache_keyword_patterns = {}
 endif
-let g:neocomplcache_keyword_patterns['gosh-repl'] = "[[:alpha:]+*/@$_=.!?-][[:alnum:]+*/@$_:=.!?-]*"
 if !exists('g:neocomplcache_omni_patterns')
     let g:neocomplcache_omni_patterns = {}
 endif
@@ -205,6 +184,11 @@ set completeopt-=preview
 
 " NERD commenter
 let NERDSpaceDelims = 1
+
+" GitGutter
+nmap <Leader>ha <Plug>GitGutterStageHunk
+nmap <Leader>hu <Plug>GitGutterRevertHunk
+nmap <Leader>hv <Plug>GitGutterPreviewHunk
 
 " Settings for CtrlP
 nnoremap s <Nop>
@@ -248,6 +232,8 @@ map *  <Plug>(incsearch-nohl-*)
 map #  <Plug>(incsearch-nohl-#)
 map g* <Plug>(incsearch-nohl-g*)
 map g# <Plug>(incsearch-nohl-g#)
+let g:incsearch#magic = '\v'
+nnoremap <ESC><ESC> :nohlsearch<CR>
 
 " Settings for vim-textobj-multiblock
 omap ab <Plug>(textobj-multiblock-a)
@@ -267,29 +253,12 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_check_on_save = 1
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_javascript_checkers = ['eslint']
-
-" jscomplete-vim
-:setl omnifunc=jscomplete#CompleteJS
-
-" vim-nodejs-complete
-:setl omnifunc=jscomplete#CompleteJS
-if !exists('g:neocomplcache_omni_functions')
-  let g:neocomplcache_omni_functions = {}
-endif
-let g:neocomplcache_omni_functions.javascript = 'nodejscomplete#CompleteJS'
-let g:node_usejscomplete = 1
-
-" rename用のマッピングを無効にしたため、代わりにコマンドを定義
-command! -nargs=0 JediRename :call jedi#rename()
-
-" pythonのrename用のマッピングがquickrunとかぶるため回避させる
-let g:jedi#rename_command = ""
-let g:jedi#documentation_command = "m"
+let g:syntastic_tex_checkers = ['lacheck']
 
 " Gtags
 map <C-g> :Gtags
@@ -298,8 +267,14 @@ map <C-h> :GtagsCursor<CR>
 map <C-j> :cn<CR>
 map <C-k> :cp<CR>
 
+" Use jpFormat.vim as gq
+set formatexpr=jpvim#formatexpr()
+
+" Allow scrolling in insert mode using c-e and c-y
+inoremap <C-e> <C-x><C-e>
+inoremap <C-y> <C-x><C-y>
+
 "カラースキームを設定
 colorscheme hybrid
 hi clear SpellBad
 hi SpellBad cterm=underline ctermfg=red
-
