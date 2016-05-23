@@ -23,15 +23,6 @@ alias ls='gls -F --color=auto'
 alias la='gls -aF --color=auto'
 alias ll='gls -lF --color=auto'
 alias grep='grep --color=auto'
-# set -x LS_COLORS (cat ~/dotfiles/.config/fish/dircolors.solarized-ansi-dark-fish)
-
-# brew
-alias bs='brew -S'
-alias bi='brew info'
-alias bl='brew list'
-alias bup='brew update'
-alias bupg='brew upgrade --all'
-alias brewall='brew update; brew upgrade --all; brew file init -n; cp $HOME/.brewfile/Brewfile $HOME/dotfiles/'
 
 # ssh-agent
 ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
