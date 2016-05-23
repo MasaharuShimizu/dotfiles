@@ -34,9 +34,9 @@ alias bupg='brew upgrade --all'
 alias brewall='brew update; brew upgrade --all; brew file init -n; cp $HOME/.brewfile/Brewfile $HOME/dotfiles/'
 
 # ssh-agent
-ssh-add ~/.ssh/id_rsa
-ssh-add ~/.ssh/id_rsa_zero2
-ssh-add ~/.ssh/id_rsa_gitlab
+ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
+ssh-add ~/.ssh/id_rsa_zero2 > /dev/null 2>&1
+ssh-add ~/.ssh/id_rsa_gitlab > /dev/null 2>&1
 
 # editor
 set -x EDITOR vim
@@ -53,7 +53,6 @@ end
 set -x PATH $PATH $HOME/.nodebrew/current/bin
 
 # rbenv
-set -x PATH $HOME/.rbenv/bin $PATH
 set -x PATH $HOME/.rbenv/shims $PATH
 rbenv rehash > /dev/null ^&1
 
@@ -68,8 +67,8 @@ set -x JAVA_HOME $JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Co
 set -x CLASSPATH $CLASSPATH /Applications/weka-3-8-0-oracle-jvm.app/Contents/Java/
 
 # Go
-set -x GOPATH $GOPATH /Users/shimizu/gocode
-set -x PATH $PATH $GOROOT/bin $GOPATH/bin
+set -x GOPATH $GOPATH /Users/shimizu/go
+set -x PATH $PATH $GOPATH/bin
 
 # others
 alias rm='rmtrash'

@@ -7,3 +7,6 @@
 .config/how-to-npm-jp/
 .config/stream-adventure/
 .config/configstore/
+
+*.swp
+*.swo
