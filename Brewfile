@@ -91,6 +91,7 @@ brew p7zip
 brew pandoc
 brew pango
 brew pcre
+brew pcre2
 brew pixman
 brew pkg-config
 brew poppler
