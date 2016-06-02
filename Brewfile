@@ -147,6 +147,7 @@ cask evernote
 cask firefox
 cask fluid
 cask flux
+cask gephi
 cask github-desktop
 cask google-chrome
 cask google-drive
