@@ -54,8 +54,6 @@ eval (python -m virtualfish auto_activation)
 
 # Java
 set -x JAVA_HOME $JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home
-# For weka
-set -x CLASSPATH $CLASSPATH /Applications/weka-3-8-0-oracle-jvm.app/Contents/Java/
 
 # Go
 set -x GOPATH $GOPATH /Users/shimizu/go
