@@ -5,8 +5,6 @@ tap argon/mas
 brew mas
 
 tap caskroom/versions
-cask java6
-cask java7
 
 tap homebrew/binary
 
@@ -140,7 +138,6 @@ cask adobe-reader
 cask appcleaner
 cask aquaterm
 cask caffeine
-cask clipmenu
 cask cyberduck
 cask dropbox
 cask eclipse-ide
@@ -148,12 +145,10 @@ cask evernote
 cask firefox
 cask fluid
 cask flux
-cask gephi
 cask github-desktop
 cask google-chrome
 cask google-drive
 cask google-japanese-ime
-cask imageoptim
 cask iterm2
 cask java
 cask karabiner
