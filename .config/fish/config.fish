@@ -59,6 +59,9 @@ set -x JAVA_HOME $JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Co
 set -x GOPATH $GOPATH /Users/shimizu/go
 set -x PATH $PATH $GOPATH/bin
 
+# Git
+set -x PATH $PATH /usr/local/share/git-core/contrib/diff-highlight
+
 # others
 alias rm='rmtrash'
 alias tunnel='ssh -N -f tunnel'
