@@ -42,6 +42,7 @@ brew gdbm
 brew gettext
 brew ghc
 brew ghostscript
+brew git
 brew glib
 brew global --with-pygments --with-ctags
 brew gmp
