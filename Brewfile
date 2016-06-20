@@ -154,6 +154,7 @@ cask iterm2
 cask java
 cask karabiner
 cask kindle
+cask latexit
 cask mactex
 cask mendeley-desktop
 cask near-lock
