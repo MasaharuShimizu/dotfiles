@@ -72,6 +72,7 @@ brew libtool
 brew libvo-aacenc
 brew libvorbis
 brew libvpx
+brew libyaml
 brew libzip
 brew little-cms2
 brew lua
@@ -92,6 +93,7 @@ brew pandoc
 brew pango
 brew pcre
 brew pcre2
+brew perl
 brew pixman
 brew pkg-config
 brew poppler
@@ -102,6 +104,7 @@ brew redis
 brew rlwrap
 brew rmtrash
 brew ruby-build
+brew ruby
 brew sdl
 brew shellcheck
 brew sqlite
@@ -159,6 +162,7 @@ cask mactex
 cask mendeley-desktop
 cask near-lock
 cask netspot
+cask pomotodo
 cask seil
 cask skype
 cask slack
@@ -210,4 +214,5 @@ appstore 409183694 Keynote
 appstore 539883307 LINE
 appstore 715768417 Microsoft Remote Desktop
 appstore 409203825 Numbers
+appstore 973134470 Pomodoro Time
 appstore 414298354 ToyViewer
