@@ -162,7 +162,6 @@ cask mactex
 cask mendeley-desktop
 cask near-lock
 cask netspot
-cask pomotodo
 cask seil
 cask skype
 cask slack
