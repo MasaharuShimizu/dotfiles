@@ -110,6 +110,7 @@ brew shellcheck
 brew sqlite
 brew terminal-notifier
 brew texi2html
+brew thefuck
 brew tmux
 brew tree
 brew vim
@@ -135,6 +136,7 @@ brew libmpc08
 brew mpfr2
 
 tap homebrew/x11
+brew libxkbcommon
 brew xdotool
 
 tap phinze/cask
