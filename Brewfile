@@ -26,8 +26,8 @@ brew curl
 brew czmq
 brew dfc
 brew direnv
-brew docker-machine
 brew docker
+brew docker-machine
 brew exiftool
 brew ffmpeg
 brew fish
@@ -103,8 +103,8 @@ brew readline
 brew redis
 brew rlwrap
 brew rmtrash
-brew ruby-build
 brew ruby
+brew ruby-build
 brew sdl
 brew shellcheck
 brew sqlite
