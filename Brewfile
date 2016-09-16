@@ -147,6 +147,7 @@ brew sqlite
 brew terminal-notifier
 brew texi2html
 brew thefuck
+brew tldr
 brew tmux
 brew tree
 brew vim
@@ -189,7 +190,6 @@ brew ctags-objc-ja
 brew gettext-mk
 
 tap tldr-pages/tldr
-brew tldr
 
 tap yudai/gotty
 brew gotty
