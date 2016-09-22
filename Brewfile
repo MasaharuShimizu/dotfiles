@@ -200,12 +200,6 @@ brew sshpass
 # Below applications were installed by Cask,
 # but do not have corresponding casks.
 
-#cask ==> Migrating cached files to /Users/shimizu/Library/Caches/Homebrew/Cask...
-#cask /Users/shimizu/Library/Caches/Homebrew/eclipse-ide-4.5.2.gz&r=1 -> /Users/shimizu/Library/Caches/Homebrew/Cask/eclipse-ide--4.5.2.gz&r=1
-#cask /Users/shimizu/Library/Caches/Homebrew/grammarly-latest.dmg -> /Users/shimizu/Library/Caches/Homebrew/Cask/grammarly--latest.dmg
-#cask /Users/shimizu/Library/Caches/Homebrew/imageoptim-1.6.1.tar.bz2 -> /Users/shimizu/Library/Caches/Homebrew/Cask/imageoptim--1.6.1.tar.bz2
-#cask /Users/shimizu/Library/Caches/Homebrew/latexit-2.8.0.dmg -> /Users/shimizu/Library/Caches/Homebrew/Cask/latexit--2.8.0.dmg
-#cask /Users/shimizu/Library/Caches/Homebrew/pomotodo-0.13.3,1458914986.dmg -> /Users/shimizu/Library/Caches/Homebrew/Cask/pomotodo--0.13.3,1458914986.dmg
 #cask trello-x (!)
 
 # App Store applications
