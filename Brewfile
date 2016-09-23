@@ -13,7 +13,6 @@ cask cyberduck
 cask dropbox
 cask eclipse-ide
 cask evernote
-cask firefox
 cask fluid
 cask flux
 cask github-desktop
@@ -27,7 +26,6 @@ cask kindle
 cask latexit
 cask mactex
 cask mendeley-desktop
-cask near-lock
 cask netspot
 cask seil
 cask skype
@@ -207,5 +205,4 @@ appstore 409183694 Keynote
 appstore 539883307 LINE
 appstore 715768417 Microsoft Remote Desktop
 appstore 409203825 Numbers
-appstore 973134470 Pomodoro Time
 appstore 414298354 ToyViewer
