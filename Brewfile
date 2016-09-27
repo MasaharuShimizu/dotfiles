@@ -201,8 +201,8 @@ brew sshpass
 #cask trello-x (!)
 
 # App Store applications
-appstore 409183694 Keynote
-appstore 539883307 LINE
-appstore 715768417 Microsoft Remote Desktop
-appstore 409203825 Numbers
-appstore 414298354 ToyViewer
+appstore 409183694 Keynote (6.6.2)
+appstore 539883307 LINE (4.9.0)
+appstore 715768417 Microsoft Remote Desktop (8.0.27181)
+appstore 409203825 Numbers (3.6.2)
+appstore 414298354 ToyViewer (5.4.0)
