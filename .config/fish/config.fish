@@ -62,6 +62,9 @@ set -x PATH $PATH $GOPATH/bin
 # Git
 set -x PATH $PATH /usr/local/share/git-core/contrib/diff-highlight
 
+# The Fuck
+eval (thefuck --alias | tr '\n' ';')
+
 # others
 alias rm='rmtrash'
 alias tunnel='ssh -N -f tunnel'
