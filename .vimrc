@@ -260,6 +260,9 @@ let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_tex_checkers = ['lacheck']
 
+" Setting for seiya.vim
+let g:seiya_auto_enable=1
+
 " Gtags
 map <C-g> :Gtags
 map <C-i> :Gtags -f %<CR>
