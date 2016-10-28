@@ -85,3 +85,6 @@ repo = "fuenor/JpFormat.vim"
 
 [[plugins]]
 repo = "miyakogi/seiya.vim"
+
+[[plugins]]
+repo = "wakatime/vim-wakatime"

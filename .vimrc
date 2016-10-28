@@ -95,6 +95,9 @@ set fo+=m
 set visualbell t_vb=
 set noerrorbells
 
+" Riot.jsのtagファイルでhtmlシンタックスハイライトを有効にする
+au BufRead,BufNewFile *.tag :set filetype=html
+
 " dein.vim
 let g:rc_dir = '~/.vim/rc'
 let s:dein_dir = expand('~/.cache/dein')
