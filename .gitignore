@@ -8,5 +8,7 @@
 .config/stream-adventure/
 .config/configstore/
 
+.vim/autoload/
+.vim/plugged/
 *.swp
 *.swo

@@ -98,45 +98,43 @@ set noerrorbells
 " Riot.jsのtagファイルでhtmlシンタックスハイライトを有効にする
 au BufRead,BufNewFile *.tag :set filetype=html
 
-" dein.vim
-let g:rc_dir = '~/.vim/rc'
-let s:dein_dir = expand('~/.cache/dein')
-let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
+" vim-plug
+call plug#begin()
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'Shougo/neocomplcache'
+Plug 'thinca/vim-quickrun'
+Plug 'yuroyoro/vimdoc_ja'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/nerdcommenter'
+Plug 'airblade/vim-gitgutter'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'kannokanno/previm'
+Plug 'tyru/open-browser.vim'
+Plug 'flazz/vim-colorschemes'
+Plug 'h1mesuke/vim-alignta'
+Plug 'kana/vim-operator-user'
+Plug 'kana/vim-textobj-user'
+Plug 'rhysd/vim-operator-surround'
+Plug 'osyo-manga/vim-textobj-multiblock'
+Plug 'Raimondi/delimitMate'
+Plug 'scrooloose/nerdtree'
+Plug 'csscomb/vim-csscomb'
+Plug 'haya14busa/incsearch.vim'
+Plug 'scrooloose/syntastic'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'fuenor/JpFormat.vim'
+Plug 'miyakogi/seiya.vim'
+Plug 'wakatime/vim-wakatime'
+Plug 'pmsorhaindo/syntastic-local-eslint.vim'
 
-if &runtimepath !~# '/dein.vim'
-  if !isdirectory(s:dein_repo_dir)
-    execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
-  endif
-  execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
-endif
-
-" 設定開始
-if dein#load_state(s:dein_dir)
-  " プラグインリストを収めたTOMLファイル
-  let s:toml      = g:rc_dir . '/dein.toml'
-  let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
-
-  call dein#begin(s:dein_dir, [s:toml, s:lazy_toml])
-
-  " TOMLを読み込み、キャッシュしておく
-  call dein#load_toml(s:toml,      {'lazy': 0})
-  call dein#load_toml(s:lazy_toml, {'lazy': 1})
-
-  " 設定終了
-  call dein#end()
-  call dein#save_state()
-endif
-
-
-" vimprocだけは最初にインストールしてほしい
-if dein#check_install(['vimproc'])
-  call dein#add('Shougo/vimproc.vim', {'build' : 'make'})
-endif
-
-" もし、未インストールものものがあったらインストール
-if dein#check_install()
-  call dein#install()
-endif
+Plug 'mattn/emmet-vim', {'for': ['javascript', 'html'] }
+Plug 'jason0x43/vim-js-indent', {'for': ['typescript', 'javascript', 'html'] }
+Plug 'leafgarland/typescript-vim', {'for': ['typescript'] }
+call plug#end()
 
 filetype plugin indent on
 
