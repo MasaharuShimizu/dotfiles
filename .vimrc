@@ -134,6 +134,7 @@ Plug 'pmsorhaindo/syntastic-local-eslint.vim'
 Plug 'mattn/emmet-vim', {'for': ['javascript', 'html'] }
 Plug 'jason0x43/vim-js-indent', {'for': ['typescript', 'javascript', 'html'] }
 Plug 'leafgarland/typescript-vim', {'for': ['typescript'] }
+Plug 'digitaltoad/vim-pug', {'for': ['pug']}
 call plug#end()
 
 filetype plugin indent on
