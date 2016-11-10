@@ -134,7 +134,6 @@ Plug 'pmsorhaindo/syntastic-local-eslint.vim'
 Plug 'mattn/emmet-vim', {'for': ['javascript', 'html'] }
 Plug 'jason0x43/vim-js-indent', {'for': ['typescript', 'javascript', 'html'] }
 Plug 'leafgarland/typescript-vim', {'for': ['typescript'] }
-Plug 'digitaltoad/vim-pug', {'for': ['pug']}
 call plug#end()
 
 filetype plugin indent on
@@ -220,6 +219,7 @@ map <silent>sr <Plug>(operator-surround-replace)
 " Settings for QuickRun
 nnoremap sc :<C-u>QuickRun<CR>
 let g:quickrun_config={'*': {'split': ''}}
+let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
 set splitbelow
 
 " Settings for incsearch
