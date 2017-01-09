@@ -98,6 +98,9 @@ set noerrorbells
 " Riot.jsのtagファイルでhtmlシンタックスハイライトを有効にする
 au BufRead,BufNewFile *.tag :set filetype=html
 
+" ビジュアルモードの色を変更する
+autocmd ColorScheme * highlight Visual ctermfg=bg ctermbg=fg
+
 " vim-plug
 call plug#begin()
 Plug 'nathanaelkane/vim-indent-guides'
