@@ -50,7 +50,7 @@ rbenv rehash > /dev/null ^&1
 # python
 source $HOME/.pythonz/etc/pythonz.fish
 eval (direnv hook fish)
-eval (python -m virtualfish auto_activation)
+eval (python3 -m virtualfish auto_activation)
 
 # Java
 set -x JAVA_HOME $JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home
