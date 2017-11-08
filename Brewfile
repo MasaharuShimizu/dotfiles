@@ -1,47 +1,6 @@
 
 # tap repositories and their packages
 
-tap argon/mas
-brew mas
-
-tap caskroom/cask
-cask adobe-reader
-cask appcleaner
-cask aquaterm
-cask caffeine
-cask cyberduck
-cask dropbox
-cask eclipse-ide
-cask evernote
-cask fluid
-cask flux
-cask github-desktop
-cask google-chrome
-cask google-drive
-cask google-japanese-ime
-cask iterm2
-cask java
-cask karabiner
-cask kindle
-cask latexit
-cask mactex
-cask mendeley-desktop
-cask netspot
-cask seil
-cask skype
-cask slack
-cask spectacle
-cask the-unarchiver
-cask vagrant
-cask virtualbox
-cask vlc
-cask wireshark
-cask xquartz
-
-tap caskroom/versions
-
-tap homebrew/binary
-
 tap homebrew/core
 brew arping
 brew aspell
@@ -53,6 +12,7 @@ brew boost
 brew boot2docker
 brew cabal-install
 brew cairo
+brew cloog
 brew cmake
 brew coreutils
 brew ctags
@@ -71,6 +31,7 @@ brew fping
 brew freetype
 brew gauche
 brew gcc
+brew gcc@4.9
 brew gd
 brew gdbm
 brew gettext
@@ -78,25 +39,33 @@ brew ghc
 brew ghostscript
 brew git
 brew glib
-brew global --with-pygments --with-ctags
+brew global --with-ctags --with-pygments
 brew gmp
+brew gmp@4
 brew gnuplot --with-aquaterm --with-x11
 brew go
 brew gobject-introspection
+brew graphite2
 brew harfbuzz
 brew heroku
+brew highlight
 brew htop
+brew httpie
 brew icu4c
 brew imagemagick
 brew iperf
 brew isl
+brew isl@0.11
+brew isl@0.12
 brew jbig2dec
 brew jpeg
 brew jq
 brew lame
 brew libevent
 brew libffi
+brew libiconv
 brew libmpc
+brew libmpc@0.8
 brew libnet
 brew libogg
 brew libpng
@@ -106,22 +75,30 @@ brew libtool
 brew libvo-aacenc
 brew libvorbis
 brew libvpx
+brew libxkbcommon
+brew libxml2
+brew libxslt
 brew libyaml
 brew libzip
 brew little-cms2
 brew lua
 brew makedepend
 brew markdown
+brew mas
 brew mercurial
+brew mongodb
 brew mpfr
+brew mpfr@2
 brew mysql
 brew nkf
 brew nmap
+brew node
 brew nodebrew
 brew oniguruma
 brew open-mpi
 brew openjpeg
 brew openssl
+brew openssl@1.1
 brew p7zip
 brew pandoc
 brew pango
@@ -132,6 +109,8 @@ brew pixman
 brew pkg-config
 brew poppler
 brew python
+brew python3
+brew r
 brew rbenv
 brew readline
 brew redis
@@ -141,6 +120,7 @@ brew ruby
 brew ruby-build
 brew sdl
 brew shellcheck
+brew sphinx-doc
 brew sqlite
 brew terminal-notifier
 brew texi2html
@@ -148,31 +128,57 @@ brew thefuck
 brew tldr
 brew tmux
 brew tree
+brew utf8proc
 brew vim
 brew webp
 brew wget
 brew x264
+brew xdotool
 brew xvid
 brew xz
 brew yasm
 brew zeromq
 
+tap homebrew/binary
+
 tap homebrew/dupes
 
 tap homebrew/science
-brew r
 
 tap homebrew/versions
-brew cloog018
-brew gcc49
-brew gmp4
-brew isl011
-brew libmpc08
-brew mpfr2
 
 tap homebrew/x11
-brew libxkbcommon
-brew xdotool
+
+tap caskroom/cask
+cask slack
+cask teamviewer
+cask flux
+cask virtualbox
+cask vlc
+cask skype
+cask aquaterm
+cask appcleaner
+cask blisk
+cask vivaldi
+cask evernote
+cask the-unarchiver
+cask iterm2
+cask dropbox
+cask latexit
+cask kindle
+cask vagrant
+cask caffeine
+cask cyberduck
+cask wireshark
+cask mactex
+cask google-chrome
+cask xquartz
+cask google-japanese-ime
+cask java
+
+tap caskroom/versions
+
+tap argon/mas
 
 tap phinze/cask
 
@@ -180,29 +186,29 @@ tap rcmdnk/file
 brew brew-file
 
 tap sanemat/font
-brew ricty --powerline --vim-powerline
+brew ricty --with-powerline
 
 tap supermomonga/splhack
 brew cmigemo-mk --HEAD
-brew ctags-objc-ja
-brew gettext-mk
+brew ctags-objc-ja --HEAD
 
 tap tldr-pages/tldr
 
 tap yudai/gotty
 brew gotty
 
-## Direct install
-brew sshpass
-
-# Below applications were installed by Cask,
-# but do not have corresponding casks.
-
-#cask trello-x (!)
+# Cask applications
+cask adobe-reader
+cask github-desktop
+cask google-drive
+cask mendeley-desktop
 
 # App Store applications
-appstore 409183694 Keynote (6.6.2)
-appstore 539883307 LINE (4.9.0)
-appstore 715768417 Microsoft Remote Desktop (8.0.27181)
-appstore 409203825 Numbers (3.6.2)
-appstore 414298354 ToyViewer (5.4.0)
+appstore 409183694 Keynote (7.3)
+appstore 896624060 Kobito (2.3.8)
+appstore 539883307 LINE (5.3.3)
+appstore 715768417 Microsoft Remote Desktop (8.0.27325)
+appstore 409203825 Numbers (4.3)
+appstore 1007457278 Realm Browser (3.0.0)
+appstore 414298354 ToyViewer (5.5.1)
+appstore 497799835 Xcode (9.0.1)
