@@ -204,6 +204,7 @@ cask google-drive
 cask mendeley-desktop
 
 # App Store applications
+appstore 1127487414 Install macOS Sierra (12.2.06)
 appstore 409183694 Keynote (7.3)
 appstore 896624060 Kobito (2.3.8)
 appstore 539883307 LINE (5.3.3)
