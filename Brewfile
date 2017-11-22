@@ -205,11 +205,11 @@ cask mendeley-desktop
 
 # App Store applications
 appstore 1127487414 Install macOS Sierra (12.2.06)
-appstore 409183694 Keynote (7.3)
+appstore 409183694 Keynote (7.3.1)
 appstore 896624060 Kobito (2.3.8)
 appstore 539883307 LINE (5.3.3)
 appstore 715768417 Microsoft Remote Desktop (8.0.27325)
-appstore 409203825 Numbers (4.3)
-appstore 1007457278 Realm Browser (3.0.0)
+appstore 409203825 Numbers (4.3.1)
+appstore 1007457278 Realm Browser (3.0.1)
 appstore 414298354 ToyViewer (5.5.1)
 appstore 497799835 Xcode (9.1)
