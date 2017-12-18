@@ -64,6 +64,7 @@ brew lame
 brew libevent
 brew libffi
 brew libiconv
+brew libidn2
 brew libmpc
 brew libmpc@0.8
 brew libnet
@@ -72,6 +73,7 @@ brew libpng
 brew libsodium
 brew libtiff
 brew libtool
+brew libunistring
 brew libvo-aacenc
 brew libvorbis
 brew libvpx
