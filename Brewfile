@@ -55,7 +55,6 @@ brew icu4c
 brew imagemagick
 brew iperf
 brew isl
-brew isl@0.11
 brew isl@0.12
 brew jbig2dec
 brew jpeg
