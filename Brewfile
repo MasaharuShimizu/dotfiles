@@ -29,6 +29,7 @@ brew fontconfig
 brew fontforge
 brew fping
 brew freetype
+brew fribidi
 brew gauche
 brew gcc
 brew gcc@4.9
@@ -41,7 +42,6 @@ brew git
 brew glib
 brew global --with-ctags --with-pygments
 brew gmp
-brew gmp@4
 brew gnuplot --with-aquaterm --with-x11
 brew go
 brew gobject-introspection
@@ -55,7 +55,6 @@ brew icu4c
 brew imagemagick
 brew iperf
 brew isl
-brew isl@0.12
 brew jbig2dec
 brew jpeg
 brew jq
@@ -65,7 +64,6 @@ brew libffi
 brew libiconv
 brew libidn2
 brew libmpc
-brew libmpc@0.8
 brew libnet
 brew libogg
 brew libpng
@@ -89,7 +87,6 @@ brew mas
 brew mercurial
 brew mongodb
 brew mpfr
-brew mpfr@2
 brew mysql
 brew nkf
 brew nmap
@@ -110,7 +107,7 @@ brew pixman
 brew pkg-config
 brew poppler
 brew python
-brew python3
+brew python@2
 brew r
 brew rbenv
 brew readline
@@ -151,31 +148,34 @@ tap homebrew/versions
 tap homebrew/x11
 
 tap caskroom/cask
-cask slack
-cask teamviewer
-cask flux
-cask virtualbox
-cask vlc
-cask skype
-cask aquaterm
 cask appcleaner
+cask aquaterm
 cask blisk
-cask vivaldi
-cask evernote
-cask the-unarchiver
-cask iterm2
-cask dropbox
-cask latexit
-cask kindle
-cask vagrant
 cask caffeine
 cask cyberduck
-cask wireshark
-cask mactex
+cask dropbox
+cask evernote
+cask flux
+cask franz
 cask google-chrome
-cask xquartz
 cask google-japanese-ime
+cask iterm2
 cask java
+cask kindle
+cask latexit
+cask mactex
+cask mono-mdk
+cask skype
+cask slack
+cask teamviewer
+cask the-unarchiver
+cask vagrant
+cask virtualbox
+cask visual-studio
+cask vivaldi
+cask vlc
+cask wireshark
+cask xquartz
 
 tap caskroom/versions
 
@@ -198,20 +198,25 @@ tap tldr-pages/tldr
 tap yudai/gotty
 brew gotty
 
-# Cask applications
+# Other Homebrew packages
+brew gmp@4
+brew isl@0.12
+brew libmpc@0.8
+brew mpfr@2
+
+# Other Cask applications
 cask adobe-reader
 cask github-desktop
 cask google-drive
 cask mendeley-desktop
 
 # App Store applications
-appstore 1127487414 Install macOS Sierra (12.2.06)
 appstore 409183694 Keynote (7.3.1)
 appstore 896624060 Kobito (2.3.8)
-appstore 539883307 LINE (5.5.1)
+appstore 539883307 LINE (5.7.0)
 appstore 715768417 Microsoft Remote Desktop (8.0.27325)
 appstore 409203825 Numbers (4.3.1)
 appstore 1007457278 Realm Browser (3.0.1)
 appstore 414298354 ToyViewer (5.5.1)
-appstore 1278508951 Trello (2.10.0)
-appstore 497799835 Xcode (9.2)
+appstore 1278508951 Trello (2.10.3)
+appstore 497799835 Xcode (9.3)
