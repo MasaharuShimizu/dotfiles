@@ -139,15 +139,7 @@ brew zeromq
 
 tap homebrew/binary
 
-tap homebrew/dupes
-
-tap homebrew/science
-
-tap homebrew/versions
-
-tap homebrew/x11
-
-tap caskroom/cask
+tap homebrew/cask
 cask appcleaner
 cask aquaterm
 cask blisk
@@ -177,7 +169,17 @@ cask vlc
 cask wireshark
 cask xquartz
 
-tap caskroom/versions
+tap homebrew/cask-versions
+
+tap homebrew/dupes
+
+tap homebrew/science
+
+tap homebrew/versions
+
+tap homebrew/x11
+
+tap caskroom/cask
 
 tap argon/mas
 
