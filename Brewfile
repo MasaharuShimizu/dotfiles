@@ -139,36 +139,6 @@ brew zeromq
 
 tap homebrew/binary
 
-tap homebrew/cask
-cask appcleaner
-cask aquaterm
-cask blisk
-cask caffeine
-cask cyberduck
-cask dropbox
-cask evernote
-cask flux
-cask franz
-cask google-chrome
-cask google-japanese-ime
-cask iterm2
-cask java
-cask kindle
-cask latexit
-cask mactex
-cask mono-mdk
-cask skype
-cask slack
-cask teamviewer
-cask the-unarchiver
-cask vagrant
-cask virtualbox
-cask visual-studio
-cask vivaldi
-cask vlc
-cask wireshark
-cask xquartz
-
 tap homebrew/cask-versions
 
 tap homebrew/dupes
@@ -179,11 +149,33 @@ tap homebrew/versions
 
 tap homebrew/x11
 
-tap caskroom/cask
+tap homebrew/cask
+cask appcleaner
+cask blisk
+cask cyberduck
+cask evernote
+cask franz
+cask google-chrome
+cask google-japanese-ime
+cask java
+cask latexit
+cask mono-mdk
+cask slack
+cask the-unarchiver
+cask virtualbox
+cask vivaldi
+cask wireshark
 
 tap argon/mas
 
 tap phinze/cask
+cask aquaterm
+cask dropbox
+cask iterm2
+cask mactex
+cask skype
+cask vagrant
+cask vlc
 
 tap rcmdnk/file
 brew brew-file
@@ -208,9 +200,15 @@ brew mpfr@2
 
 # Other Cask applications
 cask adobe-reader
+cask caffeine
+cask flux
 cask github-desktop
 cask google-drive
+cask kindle
 cask mendeley-desktop
+cask teamviewer
+cask visual-studio
+cask xquartz
 
 # App Store applications
 appstore 409183694 Keynote (7.3.1)
@@ -220,5 +218,5 @@ appstore 715768417 Microsoft Remote Desktop (8.0.27325)
 appstore 409203825 Numbers (4.3.1)
 appstore 1007457278 Realm Browser (3.0.1)
 appstore 414298354 ToyViewer (5.5.1)
-appstore 1278508951 Trello (2.10.3)
+appstore 1278508951 Trello (2.10.4)
 appstore 497799835 Xcode (9.3)
