@@ -211,7 +211,7 @@ cask xquartz
 # App Store applications
 appstore 409183694 Keynote (8.1)
 appstore 896624060 Kobito (2.3.8)
-appstore 539883307 LINE (5.9.2)
+appstore 539883307 LINE (5.9.3)
 appstore 715768417 Microsoft Remote Desktop (8.0.30030)
 appstore 409203825 Numbers (5.1)
 appstore 1007457278 Realm Browser (3.0.1)
