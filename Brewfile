@@ -91,6 +91,8 @@ brew nkf
 brew nmap
 brew node
 brew nodebrew
+brew nspr
+brew nss
 brew oniguruma
 brew open-mpi
 brew openjpeg
