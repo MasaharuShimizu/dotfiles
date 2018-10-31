@@ -46,7 +46,6 @@ brew go
 brew gobject-introspection
 brew graphite2
 brew harfbuzz
-brew heroku
 brew highlight
 brew htop
 brew httpie
@@ -195,6 +194,7 @@ brew gotty
 
 # Other Homebrew packages
 brew gmp@4
+brew heroku
 brew isl@0.12
 brew libmpc@0.8
 
