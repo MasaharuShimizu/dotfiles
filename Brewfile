@@ -97,6 +97,7 @@ brew open-mpi
 brew openjpeg
 brew openssl
 brew openssl@1.1
+brew opus
 brew p7zip
 brew pandoc
 brew pango
@@ -117,12 +118,15 @@ brew rmtrash
 brew ruby
 brew ruby-build
 brew sdl
+brew sdl2
 brew shellcheck
+brew snappy
 brew sphinx-doc
 brew sqlite
 brew terminal-notifier
 brew texi2html
 brew thefuck
+brew theora
 brew tldr
 brew tmux
 brew tree
@@ -131,6 +135,7 @@ brew vim
 brew webp
 brew wget
 brew x264
+brew x265
 brew xdotool
 brew xvid
 brew xz
@@ -213,7 +218,7 @@ cask xquartz
 # App Store applications
 appstore 409183694 Keynote (8.2)
 appstore 896624060 Kobito (2.3.8)
-appstore 539883307 LINE (5.10.0)
+appstore 539883307 LINE (5.10.1)
 appstore 715768417 Microsoft Remote Desktop (8.0.30030)
 appstore 409203825 Numbers (5.2)
 appstore 1007457278 Realm Browser (3.0.1)
