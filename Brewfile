@@ -39,7 +39,7 @@ brew ghc
 brew ghostscript
 brew git
 brew glib
-brew global --with-ctags --with-pygments
+brew global
 brew gmp
 brew gnuplot --with-aquaterm --with-x11
 brew go
