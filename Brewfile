@@ -130,6 +130,7 @@ brew theora
 brew tldr
 brew tmux
 brew tree
+brew unrar
 brew utf8proc
 brew vim
 brew webp
@@ -223,5 +224,5 @@ appstore 715768417 Microsoft Remote Desktop (8.0.30030)
 appstore 409203825 Numbers (5.2)
 appstore 1007457278 Realm Browser (3.0.1)
 appstore 414298354 ToyViewer (5.5.1)
-appstore 1278508951 Trello (2.10.7)
+appstore 1278508951 Trello (2.10.8)
 appstore 497799835 Xcode (9.4.1)
