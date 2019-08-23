@@ -26,8 +26,6 @@ alias grep='grep --color=auto'
 
 # ssh-agent
 ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
-ssh-add ~/.ssh/id_rsa_zero2 > /dev/null 2>&1
-ssh-add ~/.ssh/id_rsa_gitlab > /dev/null 2>&1
 
 # editor
 set -x EDITOR vim
@@ -55,17 +53,8 @@ eval (python3 -m virtualfish auto_activation)
 # Java
 set -x JAVA_HOME $JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home
 
-# Go
-set -x GOPATH $GOPATH /Users/shimizu/go
-set -x PATH $PATH $GOPATH/bin
-
 # Git
 set -x PATH $PATH /usr/local/share/git-core/contrib/diff-highlight
 
-# The Fuck
-eval (thefuck --alias | tr '\n' ';')
-
 # others
 alias rm='rmtrash'
-alias tunnel='ssh -N -f tunnel'
-alias quitunnel='ps -A|grep ssh|grep tunnel|sed -e \'s/\([0-9]*\).*/kill \1/g\'|sh'
