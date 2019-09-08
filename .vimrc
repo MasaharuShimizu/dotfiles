@@ -283,6 +283,6 @@ inoremap <C-e> <C-x><C-e>
 inoremap <C-y> <C-x><C-y>
 
 "カラースキームを設定
-colorscheme hybrid
+colorscheme monokai
 hi clear SpellBad
 hi SpellBad cterm=underline ctermfg=red
