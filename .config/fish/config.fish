@@ -33,10 +33,8 @@ set -x EDITOR vim
 # Common PATH
 set -x PATH $PATH $HOME/bin
 
-# Redefine fish_prompt
-function fish_prompt
-  ~/powerline-shell.py $status --shell bare ^/dev/null
-end
+# Starship
+eval (starship init fish)
 
 # node.js
 set -x PATH $PATH $HOME/.nodebrew/current/bin
