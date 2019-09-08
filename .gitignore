@@ -10,5 +10,6 @@
 
 .vim/autoload/
 .vim/plugged/
+.vim/*
 *.swp
 *.swo
