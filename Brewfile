@@ -11,6 +11,7 @@ brew automake
 brew bash
 brew bison
 brew boost
+brew cabal-install
 brew cairo
 brew cloog
 brew cmake
@@ -115,6 +116,7 @@ brew nodebrew
 brew nspr
 brew nss
 brew oniguruma
+brew open-mpi
 brew openblas
 brew opencore-amr
 brew openexr
@@ -134,6 +136,7 @@ brew pkg-config
 brew poppler
 brew postgresql
 brew python
+brew python@2
 brew qt
 brew r
 brew rbenv
@@ -156,6 +159,7 @@ brew sqlite
 brew terminal-notifier
 brew tesseract
 brew texi2html
+brew thefuck
 brew theora
 brew tldr
 brew tmux
@@ -177,23 +181,34 @@ tap homebrew/cask-versions
 
 tap homebrew/cask
 cask appcleaner
+cask balenaetcher
+cask caffeine
 cask docker
 cask evernote
+cask franz
 cask google-chrome
 cask iterm2
 cask kindle
+cask mactex
 cask mono-mdk
 cask skype
+cask teamviewer
 cask vagrant
 cask visual-studio
 cask vlc
+cask xquartz
 
 tap argon/mas
 
 tap phinze/cask
+cask aquaterm
+cask cyberduck
+cask flux
 cask google-japanese-ime
 cask latexit
+cask ngrok
 cask the-unarchiver
+cask vivaldi
 
 tap rcmdnk/file
 brew brew-file
@@ -220,13 +235,17 @@ brew libmpc@0.8
 cask adobe-reader
 cask blisk
 cask dropbox
+cask github-desktop
 cask java
+cask mendeley-desktop
 cask slack
 cask virtualbox
 cask wireshark
 
 # App Store applications
 appstore 409183694 Keynote (9.1)
+appstore 896624060 Kobito (2.3.8)
+appstore 715768417 Microsoft Remote Desktop (8.0.30030)
 appstore 409203825 Numbers (6.1)
 appstore 1007457278 Realm Browser (3.0.1)
 appstore 414298354 ToyViewer (5.6.0)
