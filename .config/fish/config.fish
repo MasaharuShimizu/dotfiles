@@ -31,7 +31,7 @@ ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
 set -x EDITOR vim
 
 # Common PATH
-set -x PATH $PATH $HOME/bin
+set -x PATH $PATH $HOME/bin /usr/local/sbin
 
 # Starship
 eval (starship init fish)
