@@ -1,134 +1,238 @@
-tap "argon/mas"
-tap "beeftornado/rmtree"
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
-tap "homebrew/services"
-tap "mongodb/brew"
-tap "phinze/cask"
-tap "rcmdnk/file"
-tap "sanemat/font"
-tap "supermomonga/splhack"
-tap "tldr-pages/tldr"
-tap "yudai/gotty"
-brew "libnet"
-brew "arping"
-brew "aspell"
-brew "autoconf"
-brew "automake"
-brew "bash"
-brew "libpng"
-brew "gettext"
-brew "libffi"
-brew "pixman"
-brew "cloog"
-brew "cmake"
-brew "coreutils"
-brew "ctags"
-brew "curl"
-brew "czmq"
-brew "dfc"
-brew "direnv"
-brew "exiftool"
-brew "libogg"
-brew "icu4c"
-brew "little-cms2"
-brew "openjpeg"
-brew "libvorbis"
-brew "xvid"
-brew "ffmpeg"
-brew "pcre2"
-brew "fish"
-brew "libtool"
-brew "fping"
-brew "gauche"
-brew "mpfr"
-brew "libmpc@0.8"
-brew "gcc@4.9"
-brew "ghostscript"
-brew "git"
-brew "git-secrets"
-brew "global"
-brew "gnuplot"
-brew "go"
-brew "heroku"
-brew "highlight"
-brew "htop"
-brew "httpie"
-brew "imagemagick"
-brew "iperf"
-brew "jbig2dec"
-brew "oniguruma"
-brew "jq"
-brew "libiconv"
-brew "libsodium"
-brew "libvo-aacenc"
-brew "libxkbcommon"
-brew "libxml2", link: true
-brew "libxslt", link: true
-brew "libzip"
-brew "makedepend"
-brew "markdown"
-brew "mercurial"
-brew "mysql"
-brew "nkf"
-brew "nmap"
-brew "nodebrew"
-brew "p7zip"
-brew "pandoc"
-brew "perl"
-brew "poppler"
-brew "postgresql"
-brew "r"
-brew "ruby-build"
-brew "rbenv"
-brew "redis"
-brew "rlwrap"
-brew "rmtrash"
-brew "sdl"
-brew "shellcheck"
-brew "sphinx-doc"
-brew "starship"
-brew "terminal-notifier"
-brew "texi2html"
-brew "thefuck"
-brew "tmux"
-brew "tree"
-brew "unrar"
-brew "utf8proc"
-brew "vim"
-brew "wget"
-brew "xdotool"
-brew "yasm"
-brew "argon/mas/mas"
-brew "rcmdnk/file/brew-file"
-brew "sanemat/font/ricty", args: ["with-powerline"]
-brew "supermomonga/splhack/cmigemo-mk", args: ["HEAD"]
-brew "supermomonga/splhack/ctags-objc-ja", args: ["HEAD"]
-brew "tldr-pages/tldr/tldr"
-brew "yudai/gotty/gotty"
-cask "adobe-reader"
-cask "phinze/cask/appcleaner"
-cask "phinze/cask/blisk"
-cask "phinze/cask/docker"
-cask "phinze/cask/dropbox"
-cask "phinze/cask/evernote"
-cask "phinze/cask/google-chrome"
-cask "phinze/cask/google-japanese-ime"
-cask "phinze/cask/iterm2"
-cask "phinze/cask/kindle"
-cask "phinze/cask/skype"
-cask "phinze/cask/slack"
-cask "phinze/cask/the-unarchiver"
-cask "phinze/cask/vagrant"
-cask "phinze/cask/virtualbox"
-cask "phinze/cask/visual-studio-code"
-cask "phinze/cask/vlc"
-cask "phinze/cask/xquartz"
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Realm Browser", id: 1007457278
-mas "ToyViewer", id: 414298354
-mas "Trello", id: 1278508951
-mas "Xcode", id: 497799835
+
+# tap repositories and their packages
+
+tap homebrew/core
+brew aom
+brew arping
+brew aspell
+brew autoconf
+brew autoconf-archive
+brew automake
+brew bash
+brew cairo
+brew cloog
+brew cmake
+brew coreutils
+brew ctags
+brew curl
+brew czmq
+brew dfc
+brew direnv
+brew exiftool
+brew ffmpeg
+brew fish
+brew flac
+brew fontconfig
+brew fontforge
+brew fping
+brew freetype
+brew frei0r
+brew fribidi
+brew gauche
+brew gcc
+brew gcc@4.9
+brew gd
+brew gdbm
+brew gettext
+brew ghostscript
+brew giflib
+brew git
+brew git-secrets
+brew glib
+brew global
+brew gmp
+brew gnuplot
+brew gnutls
+brew go
+brew gobject-introspection
+brew graphite2
+brew harfbuzz
+brew highlight
+brew htop
+brew httpie
+brew icu4c
+brew ilmbase
+brew imagemagick
+brew iperf
+brew isl
+brew jbig2dec
+brew jpeg
+brew jq
+brew lame
+brew leptonica
+brew libass
+brew libbluray
+brew libcerf
+brew libde265
+brew libevent
+brew libffi
+brew libheif
+brew libiconv
+brew libidn2
+brew libmpc
+brew libnet
+brew libogg
+brew libomp
+brew libpng
+brew libsamplerate
+brew libsndfile
+brew libsodium
+brew libsoxr
+brew libspiro
+brew libtasn1
+brew libtiff
+brew libtool
+brew libuninameslist
+brew libunistring
+brew libvo-aacenc
+brew libvorbis
+brew libvpx
+brew libxkbcommon
+brew libxml2
+brew libxslt
+brew libyaml
+brew libzip
+brew little-cms2
+brew lua
+brew lzo
+brew makedepend
+brew markdown
+brew mas
+brew mercurial
+brew mpfr
+brew mysql
+brew ncurses
+brew nettle
+brew nkf
+brew nmap
+brew node
+brew nodebrew
+brew nspr
+brew nss
+brew oniguruma
+brew openblas
+brew opencore-amr
+brew openexr
+brew openjpeg
+brew openssl
+brew openssl@1.1
+brew opus
+brew p11-kit
+brew p7zip
+brew pandoc
+brew pango
+brew pcre
+brew pcre2
+brew perl
+brew pixman
+brew pkg-config
+brew poppler
+brew postgresql
+brew python
+brew python@2
+brew qt
+brew r
+brew rbenv
+brew readline
+brew redis
+brew rlwrap
+brew rmtrash
+brew rtmpdump
+brew rubberband
+brew ruby
+brew ruby-build
+brew sdl
+brew sdl2
+brew shared-mime-info
+brew shellcheck
+brew snappy
+brew speex
+brew sphinx-doc
+brew sqlite
+brew starship
+brew terminal-notifier
+brew tesseract
+brew texi2html
+brew thefuck
+brew theora
+brew tldr
+brew tmux
+brew tree
+brew unbound
+brew unrar
+brew utf8proc
+brew vim
+brew webp
+brew wget
+brew x264
+brew x265
+brew xdotool
+brew xvid
+brew xz
+brew yasm
+brew zeromq
+
+tap homebrew/bundle
+
+tap homebrew/cask-versions
+
+tap homebrew/services
+
+tap homebrew/cask
+cask appcleaner
+cask docker
+cask evernote
+cask google-japanese-ime
+cask kindle
+cask slack
+cask vagrant
+cask visual-studio-code
+cask xquartz
+
+tap argon/mas
+
+tap beeftornado/rmtree
+
+tap mongodb/brew
+
+tap phinze/cask
+cask blisk
+cask google-chrome
+cask skype
+cask virtualbox
+
+tap rcmdnk/file
+brew brew-file
+
+tap sanemat/font
+brew ricty --with-powerline
+
+tap supermomonga/splhack
+brew cmigemo-mk --HEAD
+brew ctags-objc-ja --HEAD
+
+tap tldr-pages/tldr
+
+tap yudai/gotty
+brew gotty
+
+# Other Homebrew packages
+brew gmp@4
+brew heroku
+brew isl@0.12
+brew libmpc@0.8
+
+# Other Cask applications
+cask adobe-reader
+cask dropbox
+cask iterm2
+cask the-unarchiver
+cask vlc
+
+# App Store applications
+appstore 409183694 Keynote (9.1)
+appstore 409203825 Numbers (6.1)
+appstore 1007457278 Realm Browser (3.0.1)
+appstore 414298354 ToyViewer (5.6.0)
+appstore 1278508951 Trello (2.10.14)
+appstore 497799835 Xcode (10.3)
