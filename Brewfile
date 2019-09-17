@@ -184,10 +184,10 @@ cask docker
 cask evernote
 cask google-japanese-ime
 cask kindle
-cask slack
-cask vagrant
-cask visual-studio-code
-cask xquartz
+cask skype
+cask the-unarchiver
+cask virtualbox
+cask vlc
 
 tap argon/mas
 
@@ -198,8 +198,9 @@ tap mongodb/brew
 tap phinze/cask
 cask blisk
 cask google-chrome
-cask skype
-cask virtualbox
+cask sketch
+cask vagrant
+cask xquartz
 
 tap rcmdnk/file
 brew brew-file
@@ -226,8 +227,8 @@ brew libmpc@0.8
 cask adobe-reader
 cask dropbox
 cask iterm2
-cask the-unarchiver
-cask vlc
+cask slack
+cask visual-studio-code
 
 # App Store applications
 appstore 409183694 Keynote (9.1)
