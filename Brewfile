@@ -193,6 +193,10 @@ tap argon/mas
 
 tap beeftornado/rmtree
 
+tap heroku/brew
+brew heroku
+brew heroku-node
+
 tap mongodb/brew
 
 tap phinze/cask
@@ -219,7 +223,6 @@ brew gotty
 
 # Other Homebrew packages
 brew gmp@4
-brew heroku
 brew isl@0.12
 brew libmpc@0.8
 
@@ -236,4 +239,4 @@ appstore 409203825 Numbers (6.1)
 appstore 1007457278 Realm Browser (3.0.1)
 appstore 414298354 ToyViewer (5.6.0)
 appstore 1278508951 Trello (2.11.1)
-appstore 497799835 Xcode (10.3)
+appstore 497799835 Xcode (11.0)
