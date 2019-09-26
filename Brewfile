@@ -84,6 +84,7 @@ brew libtiff
 brew libtool
 brew libuninameslist
 brew libunistring
+brew libvidstab
 brew libvo-aacenc
 brew libvorbis
 brew libvpx
