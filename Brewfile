@@ -235,7 +235,7 @@ cask slack
 cask visual-studio-code
 
 # App Store applications
-appstore 409183694 Keynote (9.1)
+appstore 409183694 Keynote (9.2)
 appstore 1007457278 Realm Browser (3.0.1)
 appstore 414298354 ToyViewer (5.6.0)
 appstore 1278508951 Trello (2.11.1)
