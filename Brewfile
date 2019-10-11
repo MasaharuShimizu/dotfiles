@@ -102,6 +102,7 @@ brew mas
 brew mercurial
 brew mpfr
 brew mysql
+brew nasm
 brew ncurses
 brew nettle
 brew nkf
