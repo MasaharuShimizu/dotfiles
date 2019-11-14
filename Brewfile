@@ -130,6 +130,7 @@ brew pixman
 brew pkg-config
 brew poppler
 brew postgresql
+brew protobuf@3.7
 brew python
 brew python@2
 brew qt
