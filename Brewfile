@@ -116,7 +116,6 @@ brew openblas
 brew opencore-amr
 brew openexr
 brew openjpeg
-brew openssl
 brew openssl@1.1
 brew opus
 brew p11-kit
