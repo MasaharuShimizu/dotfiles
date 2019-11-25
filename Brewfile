@@ -238,6 +238,7 @@ cask visual-studio-code
 # App Store applications
 appstore 523620159 CleanMyDrive 2 (2.1.13)
 appstore 1007457278 Realm Browser (3.0.1)
+appstore 439654198 SimpleMind Lite (1.24.2)
 appstore 414298354 ToyViewer (5.6.0)
 appstore 1278508951 Trello (2.11.2)
 appstore 1482454543 Twitter (8.1.5)
