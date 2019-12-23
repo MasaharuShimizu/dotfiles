@@ -13,3 +13,4 @@
 .vim/*
 *.swp
 *.swo
+Brewfile.lock.json
