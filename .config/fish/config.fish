@@ -9,9 +9,6 @@ set fish_theme gitstatus
 # Enable plugins by adding their name separated by a space to the line below.
 set fish_plugins theme extract
 
-# Path to your custom folder (default path is ~/.oh-my-fish/custom)
-#set fish_custom $HOME/dotfiles/oh-my-fish
-
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
 
@@ -27,29 +24,11 @@ alias grep='grep --color=auto'
 # ssh-agent
 ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
 
-# editor
-set -x EDITOR vim
-
 # Common PATH
 set -x PATH $PATH $HOME/bin /usr/local/sbin
 
 # Starship
 eval (starship init fish)
-
-# node.js
-set -x PATH $PATH $HOME/.nodebrew/current/bin
-
-# rbenv
-set -x PATH $HOME/.rbenv/shims $PATH
-rbenv rehash > /dev/null ^&1
-
-# python
-source $HOME/.pythonz/etc/pythonz.fish
-eval (direnv hook fish)
-eval (python3 -m virtualfish auto_activation)
-
-# Java
-set -x JAVA_HOME $JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home
 
 # Git
 set -x PATH $PATH /usr/local/share/git-core/contrib/diff-highlight
