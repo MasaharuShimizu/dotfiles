@@ -17,7 +17,6 @@ brew "unrar"
 brew "vim"
 brew "wget"
 
-cask "adobe-reader"
 cask "appcleaner"
 cask "blisk"
 cask "docker"
