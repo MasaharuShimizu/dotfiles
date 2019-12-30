@@ -35,3 +35,4 @@ set -x PATH $PATH /usr/local/share/git-core/contrib/diff-highlight
 
 # others
 alias rm='rmtrash'
+alias fig='docker-compose'
