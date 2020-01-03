@@ -1,6 +1,7 @@
 # BrewFile
 
 cask_args appdir: "/Applications"
+tap "sanemat/font"
 brew "curl"
 brew "fish"
 brew "git"
@@ -9,6 +10,7 @@ brew "jq"
 brew "mas"
 brew "nmap"
 brew "openssl"
+brew "ricty", args: ["with-powerline"]
 brew "rmtrash"
 brew "starship"
 brew "tmux"
@@ -29,7 +31,6 @@ cask "notion"
 cask "the-unarchiver"
 cask "visual-studio-code"
 
-mas "Kindle", id: 405399194
 mas "Slack", id: 803453959
 mas "Trello", id: 1278508951
 mas "LINE", id: 539883307
