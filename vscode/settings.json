@@ -1,0 +1,59 @@
+{
+    // フォント
+    "editor.fontSize": 12,
+    "terminal.integrated.fontSize": 12,
+    "editor.fontFamily": "Ricty for powerline",
+    "terminal.integrated.fontWeightBold": "normal",
+    // カラーテーマを選択
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "vscode-icons",
+    // minimapを無効化
+    "editor.minimap.enabled": false,
+    // 1行は80文字以内
+    "editor.rulers": [
+        80
+    ],
+    // 標準のタブ幅を半角スペース2つ分に
+    "editor.tabSize": 2,
+    // 起動時に無題のファイルを開く
+    "workbench.startupEditor": "newUntitledFile",
+    // 空白文字を表示
+    "editor.renderWhitespace": "all",
+    // Emmetをタブで展開
+    "emmet.triggerExpansionOnTab": true,
+    // React(jsx)でemmetを有効に
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    // VSCodeで使用するターミナルをiTermに
+    "terminal.external.osxExec": "iTerm.app",
+    // 削除時の確認ポップアップを表示しない
+    "explorer.confirmDelete": false,
+    // ファイルの保存時にeslintを走らせる
+    "eslint.autoFixOnSave": true,
+    // Settings sync
+    "sync.gist": "74473922df518c26542ad12bab9f959b",
+    "sync.autoUpload": true,
+    "sync.autoDownload": true,
+    "sync.forceUpload": true,
+    // 背景を猫に
+    "backgroundCover.imagePath": "/Users/shimizu/Pictures/wallpaper/cat/680752caa1e2d069aa26a97c39f01aa6.jpg",
+    // misc
+    "window.zoomLevel": 0,
+    "explorer.confirmDragAndDrop": false,
+    //-------------------------- START vim setting --------------------------//
+    // システムのclipboardにコピー
+    "vim.useSystemClipboard": true,
+    // 検索に:を入れる
+    "vim.hlsearch": true,
+    // easymotion
+    "vim.easymotion": true,
+    // 諸々のctrlキーを使った操作が有効になる
+    "vim.useCtrlKeys": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    //--------------------------- END vim setting ---------------------------//
+}
