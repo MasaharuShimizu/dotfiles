@@ -30,6 +30,7 @@ cask "karabiner-elements"
 cask "notion"
 cask "the-unarchiver"
 cask "visual-studio-code"
+cask "zoomus"
 
 mas "Slack", id: 803453959
 mas "Trello", id: 1278508951
