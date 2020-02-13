@@ -29,17 +29,13 @@
     "terminal.external.osxExec": "iTerm.app",
     // 削除時の確認ポップアップを表示しない
     "explorer.confirmDelete": false,
-    // ファイルの保存時にeslintを走らせる
-    "eslint.autoFixOnSave": true,
     // Settings sync
     "sync.gist": "74473922df518c26542ad12bab9f959b",
     "sync.autoUpload": true,
     "sync.autoDownload": true,
     "sync.forceUpload": true,
-    // 背景を猫に
-    "backgroundCover.imagePath": "/Users/shimizu/Pictures/wallpaper/cat/680752caa1e2d069aa26a97c39f01aa6.jpg",
     // misc
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "explorer.confirmDragAndDrop": false,
     //-------------------------- START vim setting --------------------------//
     // システムのclipboardにコピー
@@ -54,6 +50,9 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     //--------------------------- END vim setting ---------------------------//
 }

@@ -14,6 +14,8 @@
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -577,9 +579,9 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>390 262 1012 764 0 0 1792 1097 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>586 541 620 392 0 0 1792 1097 </string>
+	<string>586 546 620 392 0 0 1792 1120 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>51 411 850 651 0 0 1792 1097 </string>
+	<string>51 635 650 427 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>228 115 650 427 0 0 1792 1097 </string>
 	<key>New Bookmarks</key>
@@ -3546,6 +3548,7 @@
 	<array>
 		<string>3.3.7</string>
 		<string>3.3.8beta4</string>
+		<string>3.3.8beta5</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -3561,15 +3564,17 @@
 	<key>NoSyncInstallationId</key>
 	<string>F273777F-C90D-416A-BAFE-569D39B49184</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>7</integer>
+	<integer>10</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>599910442.20096004</real>
+	<real>602085677.122455</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
 		<key>0</key>
@@ -4346,7 +4351,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-03T09:52:09Z</date>
+	<date>2020-01-29T14:01:22Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -4406,7 +4411,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.8beta4</string>
+	<string>3.3.8beta5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
