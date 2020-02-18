@@ -54,5 +54,7 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "python.jediEnabled": false,
+    "git.autofetch": true,
     //--------------------------- END vim setting ---------------------------//
 }
