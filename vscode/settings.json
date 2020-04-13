@@ -56,5 +56,9 @@
     },
     "python.jediEnabled": false,
     "git.autofetch": true,
+    "python.dataScience.askForKernelRestart": false,
+    "terminal.integrated.inheritEnv": false,
+    "go.useLanguageServer": true,
+    "editor.largeFileOptimizations": false,
     //--------------------------- END vim setting ---------------------------//
 }
