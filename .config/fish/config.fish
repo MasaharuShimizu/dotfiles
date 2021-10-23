@@ -9,6 +9,7 @@ alias grep='grep --color=auto'
 
 # ssh-agent
 ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
+set -x SSH_PATH /Users/masaharu/.ssh
 
 # Common PATH
 set -x PATH $PATH $HOME/bin /usr/local/sbin
@@ -22,3 +23,4 @@ set -x PATH $PATH /usr/local/share/git-core/contrib/diff-highlight
 # others
 alias rm='rmtrash'
 alias fig='docker-compose'
+alias k='kubectl'

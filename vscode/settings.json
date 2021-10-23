@@ -1,14 +1,11 @@
 {
-    // フォント
-    "editor.fontSize": 12,
     "terminal.integrated.fontSize": 12,
-    "editor.fontFamily": "Ricty for powerline",
+    "editor.fontFamily": "MyricaM M",
+    "terminal.integrated.fontFamily": "Ricty Discord for Powerline",
     "terminal.integrated.fontWeightBold": "normal",
     // カラーテーマを選択
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "GitHub Dark",
     "workbench.iconTheme": "vscode-icons",
-    // minimapを無効化
-    "editor.minimap.enabled": false,
     // 1行は80文字以内
     "editor.rulers": [
         80
@@ -34,10 +31,7 @@
     "sync.autoUpload": true,
     "sync.autoDownload": true,
     "sync.forceUpload": true,
-    // misc
-    "window.zoomLevel": 1,
     "explorer.confirmDragAndDrop": false,
-    //-------------------------- START vim setting --------------------------//
     // システムのclipboardにコピー
     "vim.useSystemClipboard": true,
     // 検索に:を入れる
@@ -58,7 +52,41 @@
     "git.autofetch": true,
     "python.dataScience.askForKernelRestart": false,
     "terminal.integrated.inheritEnv": false,
-    "go.useLanguageServer": true,
     "editor.largeFileOptimizations": false,
-    //--------------------------- END vim setting ---------------------------//
+    "vsicons.dontShowNewVersionMessage": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "go.useLanguageServer": true,
+    "go.languageServerExperimentalFeatures": {
+        "format": true,
+        "autoComplete": true,
+        "rename": true,
+        "goToDefinition": true,
+        "hover": true,
+        "signatureHelp": true,
+        "goToTypeDefinition": true,
+        "goToImplementation": true,
+        "documentSymbols": true,
+        "workspaceSymbols": true,
+        "findReferences": true,
+        "diagnostics": true
+    },
+    "[go]": {
+        "editor.snippetSuggestions": "none",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "files.associations": {
+    
+    },
+    "json.schemas": [
+    
+    ],
+    "js/ts.implicitProjectConfig.experimentalDecorators": true,
+    "editor.minimap.enabled": false,
+    "go.lintTool": "golangci-lint",
+    "go.testEnvFile": "${workspaceFolder}/.secret/.env_test",
+    "window.zoomLevel": 1,
 }
