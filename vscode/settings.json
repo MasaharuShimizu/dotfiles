@@ -46,7 +46,8 @@
         "source.fixAll.eslint": true
     },
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
     },
     "python.jediEnabled": false,
     "git.autofetch": true,
@@ -81,12 +82,50 @@
     "files.associations": {
     
     },
-    "json.schemas": [
-    
-    ],
+    "json.schemas": [],
     "js/ts.implicitProjectConfig.experimentalDecorators": true,
     "editor.minimap.enabled": false,
     "go.lintTool": "golangci-lint",
     "go.testEnvFile": "${workspaceFolder}/.secret/.env_test",
     "window.zoomLevel": 1,
+    "redhat.telemetry.enabled": false,
+    "python.languageServer": "Microsoft",
+    "security.workspace.trust.untrustedFiles": "open",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "bookmarks.useWorkaroundForFormatters": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+    },
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
 }

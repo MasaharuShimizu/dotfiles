@@ -12,13 +12,17 @@ ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
 set -x SSH_PATH /Users/masaharu/.ssh
 
 # Common PATH
-set -x PATH $PATH $HOME/bin /usr/local/sbin
+set -x PATH $PATH /usr/local/sbin
+source ~/.env
 
 # Starship
 eval (starship init fish)
 
 # Git
 set -x PATH $PATH /usr/local/share/git-core/contrib/diff-highlight
+
+# krew (a plugin manager for kubectl)
+set -gx PATH $PATH $HOME/.krew/bin
 
 # others
 alias rm='rmtrash'
