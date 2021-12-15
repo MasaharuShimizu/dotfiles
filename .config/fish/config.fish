@@ -35,6 +35,7 @@ set -x PATH $PATH /usr/local/share/git-core/contrib/diff-highlight
 set -gx PATH $PATH $HOME/.krew/bin
 
 # others
+alias g='git'
 alias rm='rmtrash'
 alias fig='docker-compose'
 alias k='kubectl'
