@@ -128,4 +128,5 @@
         "!Split",
         "!Split sequence"
     ],
+    "git.enableSmartCommit": true,
 }
