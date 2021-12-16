@@ -1,7 +1,6 @@
 {
     "terminal.integrated.fontSize": 12,
     "editor.fontFamily": "MyricaM M",
-    "terminal.integrated.fontFamily": "Ricty Discord for Powerline",
     "terminal.integrated.fontWeightBold": "normal",
     // カラーテーマを選択
     "workbench.colorTheme": "GitHub Dark",
@@ -129,4 +128,5 @@
         "!Split sequence"
     ],
     "git.enableSmartCommit": true,
+    "terminal.integrated.fontFamily": "TerminessTTF Nerd Font",
 }
