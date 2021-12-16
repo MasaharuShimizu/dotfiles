@@ -36,6 +36,7 @@ set -gx PATH $PATH $HOME/.krew/bin
 
 # others
 alias g='git'
+alias cat='bat'
 alias rm='rmtrash'
 alias fig='docker-compose'
 alias k='kubectl'
