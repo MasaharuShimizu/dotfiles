@@ -22,7 +22,9 @@ set -x SSH_PATH /Users/masaharu/.ssh
 
 # Common PATH
 set -x PATH $PATH /usr/local/sbin
-source ~/.env
+if test -e ~/.env
+  source ~/.env
+end
 
 # Starship
 if command -v starship > /dev/null
