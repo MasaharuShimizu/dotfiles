@@ -25,7 +25,9 @@ set -x PATH $PATH /usr/local/sbin
 source ~/.env
 
 # Starship
-starship init fish | source
+if command -v starship > /dev/null
+  starship init fish | source
+end
 
 
 # Git
@@ -36,7 +38,11 @@ set -gx PATH $PATH $HOME/.krew/bin
 
 # others
 alias g='git'
-alias cat='bat'
-alias rm='rmtrash'
+if command -v bat > /dev/null
+  alias cat='bat'
+end
+if command -v rmtrash > /dev/null
+  alias rm='rmtrash'
+end
 alias fig='docker-compose'
 alias k='kubectl'
