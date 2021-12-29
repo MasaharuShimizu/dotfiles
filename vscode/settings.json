@@ -86,12 +86,12 @@
     "editor.minimap.enabled": false,
     "go.lintTool": "golangci-lint",
     "go.testEnvFile": "${workspaceFolder}/.secret/.env_test",
-    "window.zoomLevel": 1,
     "redhat.telemetry.enabled": false,
     "python.languageServer": "Microsoft",
     "security.workspace.trust.untrustedFiles": "open",
     "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
     },
     "bookmarks.useWorkaroundForFormatters": true,
     "[typescript]": {
@@ -129,4 +129,6 @@
     ],
     "git.enableSmartCommit": true,
     "terminal.integrated.fontFamily": "TerminessTTF Nerd Font",
+    "bracketPairColorizer.depreciation-notice": false,
+    "window.zoomLevel": 1,
 }
