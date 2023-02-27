@@ -31,12 +31,24 @@ if command -v starship > /dev/null
   starship init fish | source
 end
 
+# Zoxide
+zoxide init fish | source
 
 # Git
 set -x PATH $PATH /usr/local/share/git-core/contrib/diff-highlight
 
 # krew (a plugin manager for kubectl)
 set -gx PATH $PATH $HOME/.krew/bin
+
+# Rust
+set -x PATH $PATH $HOME/.cargo/bin
+
+# Node
+eval (nodenv init - | source)
+set -x PATH $PATH /Users/masaharu/.npm_global/bin
+
+# Python
+pyenv init - | source
 
 # others
 alias g='git'
@@ -48,3 +60,7 @@ if command -v rmtrash > /dev/null
 end
 alias fig='docker-compose'
 alias k='kubectl'
+alias python='python3'
+
+# Created by `pipx` on 2023-02-07 09:35:36
+set PATH $PATH /Users/masaharu/.local/bin
