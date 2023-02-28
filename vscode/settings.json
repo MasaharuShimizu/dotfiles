@@ -3,14 +3,12 @@
     "editor.fontFamily": "MyricaM M",
     "terminal.integrated.fontWeightBold": "normal",
     // カラーテーマを選択
-    "workbench.colorTheme": "GitHub Dark",
-    "workbench.iconTheme": "vscode-icons",
-    // 1行は80文字以内
+    "workbench.colorTheme": "Monokai Pro (Filter Machine)",
+    "workbench.iconTheme": "Monokai Pro (Filter Machine) Icons",
+    // 1行は100文字以内
     "editor.rulers": [
-        80
+        100
     ],
-    // 標準のタブ幅を半角スペース2つ分に
-    "editor.tabSize": 2,
     // 起動時に無題のファイルを開く
     "workbench.startupEditor": "newUntitledFile",
     // 空白文字を表示
@@ -87,7 +85,7 @@
     "go.lintTool": "golangci-lint",
     "go.testEnvFile": "${workspaceFolder}/.secret/.env_test",
     "redhat.telemetry.enabled": false,
-    "python.languageServer": "Microsoft",
+    "python.languageServer": "Default",
     "security.workspace.trust.untrustedFiles": "open",
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -130,5 +128,67 @@
     "git.enableSmartCommit": true,
     "terminal.integrated.fontFamily": "TerminessTTF Nerd Font",
     "bracketPairColorizer.depreciation-notice": false,
+    "[rust]": {
+        "editor.formatOnSave": true,
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "rust-analyzer.checkOnSave.command": "clippy",
+    "explorer.openEditors.visible": 0,
+    "gitlens.changes.toggleMode": "window",
+    "oneDarkPro.vivid": true,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "githubPullRequests.fileListLayout": "flat",
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": "on"
+    },
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+    },
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=120",
+        "--ignore=E203,W503,W504",
+    ],
+    "python.linting.mypyEnabled": true,
+    "python.linting.lintOnSave": true,
+    "python.formatting.provider": "black",
+    "files.insertFinalNewline": true,
+    "editor.suggest.showMethods": true,
+    "editor.suggest.preview": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.snippetSuggestions": "top",
+    "githubPullRequests.createOnPublishBranch": "never",
+    "githubPullRequests.pushBranch": "always",
+    "githubPullRequests.pullBranch": "never",
+    "gauge.recommendedSettings.options": "Apply & Reload",
+    "chatgpt.chromiumPath": "/Applications/Sidekick.app/Contents/MacOS/Sidekick",
+    "chatgpt.gpt3.apiKey": "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",
+    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+    "vscode-neovim.highlightGroups.highlights": {
+        "Directory": "vim",
+        "IncSearch": {
+            "backgroundColor": "theme.editor.findMatchBackground",
+            "borderColor": "theme.editor.findMatchBorder"
+        },
+        "Search": {
+            "backgroundColor": "theme.editor.findMatchHighlightBackground",
+            "borderColor": "theme.editor.findMatchHighlightBorder"
+        },
+        "Visual": {
+            "backgroundColor": "theme.editor.selectionBackground"
+        },
+        "Conceal": "vim",
+        "Substitute": "vim"
+    },
     "window.zoomLevel": 1,
+    "vscode-neovim.neovimInitVimPaths.darwin": "/Users/masaharu/dotfiles/.config/nvim/init.vim",
+    "prettier.tabWidth": 4,
 }
